@@ -1,4 +1,4 @@
-﻿/* contact.css */
+/* contact.css */
 
 /* Path Cards */
 .path-card {
@@ -26,7 +26,7 @@
 }
 .path-card h3 {
     color: var(--gt-text);
-    font-size: 1.5rem;
+    font-size: 1.1rem; font-weight: 600;
     margin-bottom: 2rem;
     line-height: 1.4;
 }
@@ -290,7 +290,7 @@
 }
 .pl-num {
     color: var(--gt-accent);
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 /* Space Grid */
@@ -345,7 +345,7 @@
 }
 .faq-icon {
     color: var(--gt-accent);
-    font-size: 1.5rem;
+    font-size: 1.1rem; font-weight: 600;
     font-weight: 300;
     transition: transform 0.3s;
 }
@@ -445,5 +445,6 @@
     0% { transform: scale(0.5); opacity: 1; }
     100% { transform: scale(2.5); opacity: 0; }
 }
+
 
 

@@ -79,6 +79,8 @@
   .nav-links .nav-link:last-child {
     border-bottom: none;
   }
+
+  .d-none-mobile {
     display: none !important;
   }
   
@@ -143,4 +145,5 @@
     gap: var(--space-sm);
   }
 }
+
 

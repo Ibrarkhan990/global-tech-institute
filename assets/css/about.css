@@ -2,7 +2,7 @@
 
 /* Editorial Layouts */
 .editorial-text {
-    font-size: 1.5rem;
+    font-size: 1.1rem; font-weight: 600;
     line-height: 1.6;
     color: var(--gt-muted);
     font-weight: 300;
@@ -48,7 +48,7 @@
     opacity: 1;
 }
 .timeline-title {
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: var(--gt-text);
     margin-bottom: 1rem;
     font-weight: 600;
@@ -100,7 +100,7 @@
     position: relative; z-index: 1;
 }
 .value-title {
-    font-size: 1.5rem;
+    font-size: 1.1rem; font-weight: 600;
     color: var(--gt-text);
     margin-bottom: 1rem;
     position: relative; z-index: 1;
@@ -156,7 +156,7 @@
     justify-content: space-between;
     align-items: center;
     overflow-x: auto;
-    padding: 2rem 0;
+    padding: 1.25rem 0;
     scrollbar-width: none;
 }
 .process-node {
@@ -172,7 +172,7 @@
     top: 50%;
     transform: translateY(-50%);
     color: var(--gt-border-hover);
-    font-size: 1.5rem;
+    font-size: 1.1rem; font-weight: 600;
 }
 .process-node:last-child::after {
     display: none;
@@ -183,8 +183,8 @@
     border-bottom: 1px solid var(--gt-border);
 }
 .faq-question {
-    padding: 2rem 0;
-    font-size: 1.5rem;
+    padding: 1.25rem 0;
+    font-size: 1.1rem; font-weight: 600;
     color: var(--gt-text);
     cursor: pointer;
     display: flex;
@@ -196,7 +196,7 @@
     color: var(--gt-accent);
 }
 .faq-answer {
-    padding-bottom: 2rem;
+    padding-bottom: 1.25rem;
     color: var(--gt-muted);
     font-size: 1.15rem;
     line-height: 1.6;
@@ -219,4 +219,5 @@
         transform: translateX(-50%);
     }
 }
+
 

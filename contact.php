@@ -41,7 +41,7 @@ $contact_settings = $stmt->fetch();
     <?php include "includes/navbar.php"; ?>
 
     <!-- 01 CONTACT HERO -->
-    <header class="hero force-dark-mode" style="position: relative; overflow: hidden; min-height: 100vh; padding-bottom: 80px; background: #0a0c0f;">
+    <header class="hero" style="position: relative; overflow: hidden; min-height: 100vh; padding-bottom: 80px; background: var(--gt-surface);">
         <div class="swiper heroSwiper" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -60,9 +60,9 @@ $contact_settings = $stmt->fetch();
         <div class="container" style="position: relative; z-index: 3; height: 100%; display: flex; flex-direction: column; justify-content: flex-start; padding-top: 100px;">
             <div class="hero-content" data-aos="fade-up" data-aos-duration="1000" style="max-width: 900px;">
                 <div id="breadcrumb-container" style="margin-bottom: 2rem;"></div>
-                <span class="section-label" style="text-shadow: 2px 2px 10px rgba(0,0,0,0.8);">06 / CONTACT</span>
-                <h1 style="color: var(--gt-text); font-size: clamp(3.5rem, 8vw, 6.5rem); line-height: 1.05; margin-bottom: 2rem; letter-spacing: -2px; text-shadow: 2px 2px 10px rgba(0,0,0,0.8);">Let's Build<br><span class="text-accent" style="color: transparent; -webkit-text-stroke: 1.5px var(--gt-accent);">What's Next.</span></h1>
-                <p style="color: var(--gt-muted); font-size: 1.35rem; margin-bottom: 3rem; line-height: 1.6; max-width: 700px; text-shadow: 1px 1px 5px rgba(0,0,0,0.8);">Whether you are looking to build a digital product, grow your technology skills or simply have a question, we'd love to hear from you.</p>
+                <span class="section-label" style="">06 / CONTACT</span>
+                <h1 style="color: var(--gt-text); font-size: clamp(3.5rem, 8vw, 6.5rem); line-height: 1.05; margin-bottom: 2rem; letter-spacing: -2px; ">Let's Build<br><span class="text-accent" style="color: transparent; -webkit-text-stroke: 1.5px var(--gt-accent);">What's Next.</span></h1>
+                <p style="color: var(--gt-muted); font-size: 1.35rem; margin-bottom: 3rem; line-height: 1.6; max-width: 700px; ">Whether you are looking to build a digital product, grow your technology skills or simply have a question, we'd love to hear from you.</p>
                 <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
                     <a href="#business-inquiry" class="btn btn-primary" onclick="event.preventDefault(); document.querySelector('#business-inquiry').scrollIntoView({behavior: 'smooth'})">Start a Project →</a>
                     <a href="apply.php" class="btn" style="background: var(--gt-card-hover); color: var(--gt-text); border: 1px solid var(--gt-border-hover);">Apply Now →</a>
@@ -219,7 +219,7 @@ $contact_settings = $stmt->fetch();
     </section>
 
     <!-- 02 UNIVERSAL FORM -->
-    <section class="section" style="padding: 8rem 0; background: #020304; border-top: 1px solid var(--gt-border); position: relative; overflow: hidden;">
+    <section class="section" style="padding: 8rem 0; background: var(--gt-bg); border-top: 1px solid var(--gt-border); position: relative; overflow: hidden;">
         <!-- Abstract Tech Background Grid -->
         <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: radial-gradient(rgba(255,255,255,0.03) 2px, transparent 2px); background-size: 40px 40px; opacity: 0.5;"></div>
         
@@ -229,7 +229,7 @@ $contact_settings = $stmt->fetch();
                 <h2 class="section-title" style="font-size: 3.5rem;">Tell Us What's<br>on Your Mind.</h2>
             </div>
             
-            <div data-aos="fade-up" data-aos-delay="100" style="background: rgba(255,255,255,0.01); border: 1px solid var(--gt-border); padding: 4rem; border-radius: 30px; box-shadow: 0 40px 100px rgba(0,0,0,0.8); position: relative; overflow: hidden;">
+            <div data-aos="fade-up" data-aos-delay="100" style="background: var(--gt-surface); border: 1px solid var(--gt-border); padding: 4rem; border-radius: 30px; box-shadow: var(--gt-shadow); position: relative; overflow: hidden;">
                 <!-- Glowing corner accents -->
                 <div style="position: absolute; top: 0; left: 0; max-width: 100vw; max-height: 100vh; width: 100px; height: 100px; background: var(--gt-accent); filter: blur(70px); opacity: 0.1;"></div>
                 <div style="position: absolute; bottom: 0; right: 0; max-width: 100vw; max-height: 100vh; width: 100px; height: 100px; background: #ffffff; filter: blur(70px); opacity: 0.05;"></div>
@@ -322,7 +322,7 @@ $contact_settings = $stmt->fetch();
                     <a href="#" class="btn btn-primary" style="margin-top: 3rem;">GET DIRECTIONS →</a>
                 </div>
 
-                <div data-aos="fade-left" style="height: 100%; min-height: 500px; border-radius: 24px; position: relative; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.6); background: #0a0c0f;">
+                <div data-aos="fade-left" style="height: 100%; min-height: 500px; border-radius: 24px; position: relative; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.6); background: var(--gt-surface);">
                     <!-- Abstract Map Background -->
                     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.4; background-image: url('https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'); background-size: cover; background-position: center; mix-blend-mode: luminosity;"></div>
                     
@@ -342,7 +342,7 @@ $contact_settings = $stmt->fetch();
                         </div>
                         
                         <!-- Premium Info Card -->
-                        <div style="background: rgba(10, 12, 15, 0.8); backdrop-filter: blur(15px); padding: 1.5rem 2rem; border-radius: 12px; border: 1px solid var(--gt-focus-ring); text-align: center; box-shadow: 0 15px 35px rgba(0,0,0,0.5);">
+                        <div style="background: var(--gt-card-bg); backdrop-filter: blur(15px); padding: 1.5rem 2rem; border-radius: 12px; border: 1px solid var(--gt-focus-ring); text-align: center; box-shadow: 0 15px 35px rgba(0,0,0,0.5);">
                             <h4 style="color: var(--gt-text); font-family: var(--font-display); letter-spacing: 2px; margin-bottom: 0.5rem; font-size: 1.2rem;">GLOBAL TECH HQ</h4>
                             <p style="color: var(--gt-muted); font-size: 0.9rem; margin: 0;">Main Campus & Office</p>
                         </div>
@@ -378,9 +378,9 @@ $contact_settings = $stmt->fetch();
     </section>
 
     <!-- 05 FINAL CTA -->
-    <section class="section force-dark-mode" style="padding: 6rem 0 10rem 0; background: var(--gt-bg);">
+    <section class="section" style="padding: 6rem 0 10rem 0; background: var(--gt-bg);">
         <div class="container">
-            <div data-aos="fade-up" style="position: relative; border-radius: 40px; padding: 8rem 2rem; text-align: center; overflow: hidden; background: var(--gt-surface); border: 1px solid var(--gt-border); box-shadow: 0 40px 100px rgba(0,0,0,0.8);">
+            <div data-aos="fade-up" style="position: relative; border-radius: 40px; padding: 8rem 2rem; text-align: center; overflow: hidden; background: var(--gt-surface); border: 1px solid var(--gt-border); box-shadow: var(--gt-shadow);">
                 
                 <!-- Animated Background Elements -->
                 <div style="position: absolute; top: -50%; left: -20%; width: 70%; height: 200%; background: radial-gradient(circle, var(--gt-accent) 0%, transparent 60%); opacity: 0.05; transform: rotate(30deg); pointer-events: none;"></div>
@@ -393,13 +393,13 @@ $contact_settings = $stmt->fetch();
                     <span class="section-label" style="background: var(--gt-focus-ring); color: var(--gt-accent); padding: 8px 16px; border-radius: 50px; display: inline-block; margin-bottom: 2rem;">06 / NEXT STEP</span>
                     <h2 class="section-title" style="font-size: clamp(3.5rem, 7vw, 5.5rem); line-height: 1.1; margin-bottom: 2rem;">
                         Let's Start <br>
-                        <span style="color: transparent; -webkit-text-stroke: 1.5px rgba(255,255,255,0.8); font-style: italic;">the Conversation.</span>
+                        <span style="color: transparent; -webkit-text-stroke: 1.5px var(--gt-text-strong); font-style: italic;">the Conversation.</span>
                     </h2>
                     <p class="section-desc" style="margin: 0 auto 4rem; font-size: 1.3rem; max-width: 600px;">Tell us what you need. We'll help you figure out exactly what comes next.</p>
                     
                     <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
                         <a href="#business-inquiry" class="btn btn-primary" style="padding: 1.2rem 3rem; font-size: 1.1rem; box-shadow: 0 10px 30px var(--gt-focus-ring);" onclick="event.preventDefault(); document.querySelector('#business-inquiry').scrollIntoView({behavior: 'smooth'})">START A PROJECT →</a>
-                        <a href="apply.php" class="btn" style="padding: 1.2rem 3rem; font-size: 1.1rem; background: transparent; color: var(--gt-text); border: 1px solid rgba(255,255,255,0.3); transition: all 0.3s;" onmouseover="this.style.background='var(--gt-border)'" onmouseout="this.style.background='transparent'">APPLY NOW →</a>
+                        <a href="apply.php" class="btn" style="padding: 1.2rem 3rem; font-size: 1.1rem; background: transparent; color: var(--gt-text); border: 1px solid var(--gt-border); transition: all 0.3s;" onmouseover="this.style.background='var(--gt-border)'" onmouseout="this.style.background='transparent'">APPLY NOW →</a>
                     </div>
                 </div>
             </div>
@@ -423,6 +423,11 @@ $contact_settings = $stmt->fetch();
     <script src="assets/js/main.js?v=<?= filemtime('assets/js/main.js') ?>"></script>
 </body>
 </html>
+
+
+
+
+
 
 
 

@@ -35,18 +35,18 @@ require_once 'includes/functions.php';
 
         <?php include 'includes/navbar.php'; ?>
     <!-- Hero Section (Index Style) -->
-    <header class="hero force-dark-mode" style="position: relative; overflow: hidden; min-height: 100vh; padding-bottom: 80px;">
+    <header class="hero" style="position: relative; overflow: hidden; min-height: 100vh; padding-bottom: 80px;">
         <!-- Swiper Container -->
         <div class="swiper heroSwiper" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Technology" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.4);">
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Technology" class="hero-img">
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Code" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.4);">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Code" class="hero-img">
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Team" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.4);">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Team" class="hero-img">
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -302,9 +302,9 @@ require_once 'includes/functions.php';
     </section>
 
     <!-- CTA Section -->
-    <section class="section force-dark-mode" style="padding: 6rem 0;">
+    <section class="section" style="padding: clamp(3rem, 5vw, 6rem) 0;">
         <div class="container">
-            <div data-aos="zoom-in" style="position: relative; background: linear-gradient(135deg, rgba(30,35,40,0.8) 0%, rgba(10,12,15,1) 100%); border: 1px solid var(--gt-focus-ring); border-radius: 32px; padding: 6rem 2rem; text-align: center; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.6);">
+            <div data-aos="zoom-in" style="position: relative; background: var(--gt-bg); border: 1px solid var(--gt-focus-ring); border-radius: 32px; padding: clamp(3rem, 6vw, 6rem) clamp(1.5rem, 4vw, 2rem); text-align: center; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.6);">
                 
                 <!-- Background Effects -->
                 <div style="position: absolute; top: -150px; left: -150px; max-width: 100vw; max-height: 100vh; width: 400px; height: 400px; background: var(--gt-accent); filter: blur(120px); opacity: 0.15; z-index: 0; border-radius: 50%;"></div>
@@ -333,7 +333,7 @@ require_once 'includes/functions.php';
     <!-- Newsletter / Stay Updated Section -->
     <section class="section" style="padding: 2rem 0;">
         <div class="container">
-            <div data-aos="fade-up" style="background: linear-gradient(90deg, rgba(30,35,40,0.6) 0%, rgba(19,23,26,0.9) 100%); border: 1px solid var(--gt-border); border-radius: 24px; padding: 4rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 3rem; position: relative; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+            <div data-aos="fade-up" style="background: var(--gt-bg); border: 1px solid var(--gt-border); border-radius: 24px; padding: clamp(2rem, 5vw, 4rem); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 3rem; position: relative; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
                 <div style="position: absolute; top: -50px; left: -50px; max-width: 100vw; max-height: 100vh; width: 200px; height: 200px; background: var(--gt-accent); filter: blur(100px); opacity: 0.1; z-index: 0;"></div>
                 <div style="position: absolute; bottom: -50px; right: -50px; max-width: 100vw; max-height: 100vh; width: 200px; height: 200px; background: var(--gt-accent-soft); filter: blur(100px); opacity: 0.05; z-index: 0;"></div>
                 
@@ -365,6 +365,8 @@ require_once 'includes/functions.php';
     <script src="assets/js/courses.js"></script>
 </body>
 </html>
+
+
 
 
 

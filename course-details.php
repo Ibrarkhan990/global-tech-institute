@@ -35,17 +35,17 @@ require_once 'includes/functions.php';
 
         <?php include 'includes/navbar.php'; ?>
         <!-- Page Header Slider -->
-    <header class="page-header force-dark-mode" style="position: relative; overflow: hidden; height: 40vh; min-height: 300px; margin-top: 70px;">
+    <header class="page-header " style="position: relative; overflow: hidden; height: 40vh; min-height: 300px; margin-top: 70px;">
         <div class="swiper pageSwiper" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Tech" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.3);">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Tech" class="hero-img">
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Work" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.3);">
+                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Work" class="hero-img">
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Team" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.3);">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Team" class="hero-img">
                 </div>
             </div>
         </div>
@@ -126,6 +126,7 @@ require_once 'includes/functions.php';
     <script src="assets/js/animations.js"></script>
 </body>
 </html>
+
 
 
 

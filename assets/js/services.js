@@ -90,19 +90,19 @@ document.addEventListener('DOMContentLoaded', () => {
         serviceData.forEach((d, index) => {
             const num = (index + 1).toString().padStart(2, '0');
             detailsHTML += `
-                <div style="background: linear-gradient(145deg, var(--gt-surface), var(--gt-bg)); border: 1px solid var(--gt-border); border-radius: 16px; padding: 3.5rem; position: relative; overflow: hidden; display: flex; flex-direction: column; transition: transform 0.4s ease, box-shadow 0.4s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.6)'; this.style.borderColor='var(--gt-accent)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'; this.style.borderColor='var(--gt-border)';" data-aos="fade-up" data-aos-delay="${(index % 2) * 100}">
+                <div style="background: linear-gradient(145deg, var(--gt-surface), var(--gt-bg)); border: 1px solid var(--gt-border); border-radius: 16px; padding: 2rem; position: relative; overflow: hidden; display: flex; flex-direction: column; transition: transform 0.4s ease, box-shadow 0.4s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.6)'; this.style.borderColor='var(--gt-accent)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'; this.style.borderColor='var(--gt-border)';" data-aos="fade-up" data-aos-delay="${(index % 2) * 100}">
                     <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: var(--gt-accent); opacity: 0.03; border-radius: 50%;"></div>
                     
-                    <span style="display: inline-block; padding: 8px 16px; background: rgba(199, 240, 0, 0.1); color: var(--gt-accent); font-family: var(--font-display); font-weight: 700; font-size: 0.85rem; border-radius: 30px; margin-bottom: 2rem; letter-spacing: 1px; align-self: flex-start;">${num} &mdash; SERVICE</span>
+                    <span style="display: inline-block; padding: 8px 16px; background: rgba(199, 240, 0, 0.1); color: var(--gt-accent); font-family: var(--font-display); font-weight: 700; font-size: 0.85rem; border-radius: 30px; margin-bottom: 1rem; letter-spacing: 1px; align-self: flex-start;">${num} &mdash; SERVICE</span>
                     
-                    <h3 style="font-size: 2.5rem; color: #fff; margin-bottom: 1.5rem; line-height: 1.1;">${d.title}</h3>
+                    <h3 style="font-size: 2.5rem; color: var(--gt-text-strong); margin-bottom: 1.5rem; line-height: 1.1;">${d.title}</h3>
                     
-                    <p style="color: var(--gt-muted); line-height: 1.8; margin-bottom: 2.5rem; font-size: 1.15rem;">${d.longDesc}</p>
+                    <p style="color: var(--gt-muted); line-height: 1.8; margin-bottom: 1.5rem; font-size: 1.15rem;">${d.longDesc}</p>
                     
-                    <div style="margin-bottom: 3rem; flex: 1;">
+                    <div style="margin-bottom: 1.5rem; flex: 1;">
                         <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 16px;">
                             ${d.provides.map(p => `
-                                <li style="display: flex; align-items: center; font-size: 1.1rem; color: #fff;">
+                                <li style="display: flex; align-items: center; font-size: 1.1rem; color: var(--gt-text-strong);">
                                     <span style="color: var(--gt-bg); background: var(--gt-accent); border-radius: 8px; width: 32px; height: 32px; display: inline-flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;">
                                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                     </span> 
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         </ul>
                     </div>
                     
-                    <div style="margin-bottom: 3rem;">
+                    <div style="margin-bottom: 1.5rem;">
                         <div style="font-size: 0.8rem; letter-spacing: 2px; color: var(--gt-muted); margin-bottom: 1rem; font-weight: 600;">TECHNOLOGIES</div>
                         <div style="display: flex; flex-wrap: wrap; gap: 8px;">
                             ${d.tech.map(t => `<span style="padding: 6px 12px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; color: var(--gt-muted); font-size: 0.85rem;">${t}</span>`).join('')}
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 solutionResult.innerHTML = `
                     <div style="margin-top: 2rem; padding: 2rem; background: rgba(199,240,0,0.05); border: 1px solid var(--gt-accent); border-radius: 16px; animation: fadeIn 0.4s ease;">
                         <div style="color: var(--gt-accent); font-size: 0.8rem; letter-spacing: 2px; font-weight: 700; margin-bottom: 0.5rem;">RECOMMENDED SERVICE</div>
-                        <h4 style="color: #fff; font-size: 1.8rem; margin-bottom: 1.5rem;">${rec}</h4>
+                        <h4 style="color: var(--gt-text-strong); font-size: 1.8rem; margin-bottom: 1.5rem;">${rec}</h4>
                         <a href="#project-inquiry" class="btn btn-primary" onclick="const sel = document.querySelector('#service-select'); if(sel){sel.value='${rec}';}">Discuss Your Project &rarr;</a>
                     </div>
                 `;
@@ -163,8 +163,8 @@ document.addEventListener('DOMContentLoaded', () => {
         let faqHTML = '';
         faqs.forEach((faq, index) => {
             faqHTML += `
-                <div class="faq-item ${index === 0 ? 'active' : ''}" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 12px; margin-bottom: 1rem; overflow: hidden; padding: 0 1.5rem;">
-                    <div class="faq-question" style="padding: 1.5rem 0; font-size: 1.15rem; font-weight: 600; color: ${index === 0 ? 'var(--gt-accent)' : '#fff'}; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                <div class="faq-item ${index === 0 ? 'active' : ''}" style="background: var(--gt-surface); border: 1px solid var(--gt-border); border-radius: 12px; margin-bottom: 1rem; overflow: hidden; padding: 0 1.5rem;">
+                    <div class="faq-question" style="padding: 1.5rem 0; font-size: 1.15rem; font-weight: 600; color: ${index === 0 ? 'var(--gt-accent)' : 'var(--gt-text)'}; cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
                         ${faq.q}
                         <span style="font-size: 1.5rem; transition: transform 0.3s; transform: ${index === 0 ? 'rotate(45deg)' : 'rotate(0)'}">+</span>
                     </div>
@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.querySelectorAll('.faq-item').forEach(i => {
                     i.classList.remove('active');
                     i.querySelector('.faq-answer').style.display = 'none';
-                    i.querySelector('.faq-question').style.color = '#fff';
+                    i.querySelector('.faq-question').style.color = 'var(--gt-text)';
                     i.querySelector('span').style.transform = 'rotate(0)';
                 });
                 if(!isActive) {
@@ -196,3 +196,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+

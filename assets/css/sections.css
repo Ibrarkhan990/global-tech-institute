@@ -423,7 +423,7 @@
 }
 .text-outline {
     color: transparent;
-    -webkit-text-stroke: 1px var(--gt-text-strong);
+    -webkit-text-stroke: 2px var(--gt-text-strong);
 }
 .section-subtitle {
     font-size: 1.1rem;
@@ -621,4 +621,90 @@
 .course-filters .filter-btn:hover, .course-filters .filter-btn.active {
     padding-left: 24px; /* remove the old hover shift if we want */
     border-color: var(--gt-accent);
+}
+
+@media (max-width: 768px) {
+    .course-card {
+        padding: 1.25rem !important;
+        border-radius: 12px !important;
+    }
+    .course-title {
+        font-size: 1.5rem !important;
+    }
+    .course-desc {
+        font-size: 0.9rem !important;
+        margin-bottom: 1rem !important;
+    }
+    .course-stats {
+        padding-top: 1rem !important;
+        margin-bottom: 1.5rem !important;
+        gap: 0.75rem !important;
+    }
+    .stat-item .stat-value {
+        font-size: 0.9rem !important;
+    }
+    .course-actions .btn {
+        padding: 10px 16px !important;
+        font-size: 0.9rem !important;
+    }
+    .section-title {
+        font-size: 1.6rem !important;
+    }
+    .section-subtitle {
+        font-size: 0.9rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+}
+
+/* Hero Image Theme Adaptation */
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.4);
+    transition: filter 0.3s ease;
+}
+html[data-theme="light"] .hero-img {
+    filter: brightness(0.9) opacity(0.3);
+}
+
+/* Hero Typography and Buttons Theme Adaptation */
+.hero-title {
+    color: var(--gt-text);
+    font-size: clamp(1.5rem, 8vw, 4rem);
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+.hero-subtitle {
+    color: #e0e0e0;
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    max-width: 600px;
+    margin-top: 1rem;
+}
+.hero-btn-outline {
+    border-color: #ffffff !important;
+    color: #ffffff !important;
+}
+
+html[data-theme="light"] .hero-title,
+html[data-theme="light"] .hero-subtitle {
+    text-shadow: none;
+}
+html[data-theme="light"] .hero-subtitle {
+    color: var(--gt-muted);
+}
+html[data-theme="light"] .hero-btn-outline {
+    border-color: var(--gt-border-hover) !important;
+    color: var(--gt-text) !important;
+}
+html[data-theme="light"] .hero-btn-outline:hover {
+    background: var(--gt-border-hover) !important;
+}
+
+
+/* Swiper Light Mode Fix */
+html[data-theme="light"] .swiper-pagination-bullet {
+    background: var(--gt-text) !important;
 }

@@ -38,18 +38,18 @@ require_once 'includes/functions.php';
     <div id="breadcrumb-container"></div>
 
         <!-- Hero Section -->
-    <header class="hero force-dark-mode" style="position: relative; overflow: hidden; min-height: 100vh; padding-bottom: clamp(3rem, 6vw, 5rem);">
+    <header class="hero" style="position: relative; overflow: hidden; min-height: 100vh; padding-bottom: clamp(3rem, 6vw, 5rem);">
         <!-- Swiper Container -->
         <div class="swiper heroSwiper" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Technology" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.4);">
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Technology" class="hero-img">
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Code" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.4);">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Code" class="hero-img">
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Team" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.4);">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Team" class="hero-img">
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -57,11 +57,11 @@ require_once 'includes/functions.php';
 
         <div class="container" style="position: relative; z-index: 2; height: 100%; display: flex; flex-direction: column; justify-content: flex-start; padding-top: clamp(6rem, 15vh, 120px);">
             <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
-                <h1 style="color: var(--gt-text); font-size: clamp(2rem, 10vw, 6rem); text-shadow: 2px 2px 10px rgba(0,0,0,0.5); line-height: 1.1; margin-bottom: 1rem;">Build Skills.<br>Build Software.<br><span class="text-accent">Build the Future.</span></h1>
-                <p style="color: #e0e0e0; font-size: clamp(1rem, 2.5vw, 1.25rem); text-shadow: 1px 1px 5px rgba(0,0,0,0.5); max-width: 600px; margin-top: 1rem;">Global Tech & Institute combines professional software development with practical technology education to help businesses and people move forward.</p>
+                <h1 class="hero-title">Build Skills.<br>Build Software.<br><span class="text-accent">Build the Future.</span></h1>
+                <p class="hero-subtitle">Global Tech & Institute combines professional software development with practical technology education to help businesses and people move forward.</p>
                 <div class="hero-actions" style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
                     <a href="apply.php" class="btn btn-primary">Apply Now →</a>
-                    <a href="courses.php" class="btn btn-outline" style="border-color: #ffffff; color: #ffffff;">Explore Courses</a>
+                    <a href="courses.php" class="btn btn-outline" class="btn-outline hero-btn-outline">Explore Courses</a>
                 </div>
             </div>
         </div>
@@ -102,7 +102,7 @@ require_once 'includes/functions.php';
         <div class="container">
             <div data-aos="fade-up">
                 <span class="section-label">01 / Divisions</span>
-                <h2 style="font-size: clamp(1.8rem, 6vw, 3.5rem); margin-bottom: var(--space-lg); line-height: 1.1;">We Build Technology.<br><span class="text-accent">We Build People.</span></h2>
+                <h2 style="font-size: clamp(1.4rem, 5vw, 2.8rem); margin-bottom: var(--space-lg); line-height: 1.1;">We Build Technology.<br><span class="text-accent">We Build People.</span></h2>
             </div>
             
             <div class="grid grid-2" data-aos="fade-up" data-aos-delay="100" style="gap: 2.5rem;">
@@ -110,7 +110,7 @@ require_once 'includes/functions.php';
                 <div style="background: linear-gradient(145deg, var(--gt-surface), var(--gt-bg)); border: 1px solid var(--gt-border); border-radius: 16px; padding: 3.5rem; position: relative; overflow: hidden; transition: transform 0.4s ease, box-shadow 0.4s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.6)'; this.style.borderColor='var(--gt-accent)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'; this.style.borderColor='var(--gt-border)';">
                     <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: var(--gt-accent); opacity: 0.03; border-radius: 50%;"></div>
                     <span style="display: inline-block; padding: 8px 16px; background: var(--gt-focus-ring); color: var(--gt-accent); font-family: var(--font-display); font-weight: 700; font-size: 0.85rem; border-radius: 30px; margin-bottom: 2rem; letter-spacing: 1px;">01 — SOFTWARE HOUSE</span>
-                    <h2 style="font-size: clamp(1.5rem, 5vw, 2.5rem); margin-bottom: 1.5rem;">Technology for Businesses</h2>
+                    <h2 style="font-size: clamp(1.2rem, 4vw, 2rem); margin-bottom: 1.5rem;">Technology for Businesses</h2>
                     <p class="text-muted" style="margin-bottom: 2.5rem; font-size: 1.15rem; line-height: 1.8;">Digital products, websites, custom systems, and business solutions meticulously designed for scale and performance.</p>
                     <ul style="margin-bottom: 3rem; list-style: none; padding: 0;">
                         <li style="margin-bottom: 16px; display: flex; align-items: center; font-size: 1.1rem;"><span style="color: var(--gt-bg); background: var(--gt-accent); border-radius: 8px; width: 32px; height: 32px; display: inline-flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></span> Web Applications</li>
@@ -128,7 +128,7 @@ require_once 'includes/functions.php';
                 <div style="background: linear-gradient(145deg, var(--gt-surface), var(--gt-bg)); border: 1px solid var(--gt-border); border-radius: 16px; padding: 3.5rem; position: relative; overflow: hidden; transition: transform 0.4s ease, box-shadow 0.4s ease;" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.6)'; this.style.borderColor='var(--gt-accent)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'; this.style.borderColor='var(--gt-border)';">
                     <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: var(--gt-accent); opacity: 0.03; border-radius: 50%;"></div>
                     <span style="display: inline-block; padding: 8px 16px; background: var(--gt-focus-ring); color: var(--gt-accent); font-family: var(--font-display); font-weight: 700; font-size: 0.85rem; border-radius: 30px; margin-bottom: 2rem; letter-spacing: 1px;">02 — TECHNOLOGY INSTITUTE</span>
-                    <h2 style="font-size: clamp(1.5rem, 5vw, 2.5rem); margin-bottom: 1.5rem;">Skills for the Future</h2>
+                    <h2 style="font-size: clamp(1.2rem, 4vw, 2rem); margin-bottom: 1.5rem;">Skills for the Future</h2>
                     <p class="text-muted" style="margin-bottom: 2.5rem; font-size: 1.15rem; line-height: 1.8;">Practical courses, technical training, and career development designed to make you industry-ready for the modern economy.</p>
                     <ul style="margin-bottom: 3rem; list-style: none; padding: 0;">
                         <li style="margin-bottom: 16px; display: flex; align-items: center; font-size: 1.1rem;"><span style="color: var(--gt-bg); background: var(--gt-accent); border-radius: 8px; width: 32px; height: 32px; display: inline-flex; align-items: center; justify-content: center; margin-right: 15px; flex-shrink: 0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4.5v9L12 22l-8-4.5v-9L12 2z"></path><polyline points="12 22 12 11"></polyline><polyline points="20 6.5 12 11"></polyline><polyline points="4 6.5 12 11"></polyline></svg></span> Python with AI</li>
@@ -153,7 +153,7 @@ require_once 'includes/functions.php';
                 <div class="course-sidebar" data-aos="fade-right">
                     <div style="position: relative; z-index: 1;">
                         <span class="badge-accent">02 / EDUCATION</span>
-                        <h2 class="section-title">Master<br>The<br><span class="text-outline">Future.</span></h2>
+                        <h2 class="section-title">Master<br>The<br><span class="text-outline" style="-webkit-text-stroke: 2px var(--gt-text-strong); color: transparent;">Future.</span></h2>
                         <p class="section-subtitle">Industry-leading programs designed to transform beginners into highly-paid tech professionals.</p>
                         
                         <div class="course-filters">
@@ -266,7 +266,7 @@ require_once 'includes/functions.php';
         <div class="container">
             <div data-aos="fade-up" style="text-align: center; margin-bottom: 4rem;">
                 <span style="display: inline-block; padding: 8px 16px; background: var(--gt-focus-ring); color: var(--gt-accent); font-family: var(--font-display); font-weight: 700; font-size: 0.85rem; border-radius: 30px; margin-bottom: 1.5rem; letter-spacing: 2px;">03 / OUR EXPERTISE</span>
-                <h2 style="font-size: clamp(2rem, 6vw, 4.5rem); line-height: 1.1; margin-bottom: 1rem;">Digital Products.<br>Built With <span style="color: transparent; -webkit-text-stroke: 1px var(--gt-accent);">Purpose.</span></h2>
+                <h2 style="font-size: clamp(1.5rem, 6vw, 3rem); line-height: 1.1; margin-bottom: 1rem;">Digital Products.<br>Built With <span style="color: transparent; -webkit-text-stroke: 1px var(--gt-accent);">Purpose.</span></h2>
                 <p style="color: var(--gt-muted); max-width: 600px; margin: 0 auto; font-size: 1.15rem;">We transform ideas into scalable, high-performance digital solutions designed to elevate your business.</p>
             </div>
             
@@ -412,9 +412,9 @@ require_once 'includes/functions.php';
     </section>
 
     <!-- CTA Section -->
-    <section class="section" style="padding: 6rem 0;">
+    <section class="section" style="padding: var(--space-xl) 0;">
         <div class="container">
-            <div data-aos="zoom-in" style="position: relative; background: var(--gt-bg); border: 1px solid var(--gt-focus-ring); border-radius: 32px; padding: 6rem 2rem; text-align: center; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.6);">
+            <div data-aos="zoom-in" style="position: relative; background: var(--gt-bg); border: 1px solid var(--gt-focus-ring); border-radius: 32px; padding: clamp(3rem, 6vw, 6rem) clamp(1.5rem, 4vw, 2rem); text-align: center; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.6);">
                 
                 <!-- Background Effects -->
                 <div style="position: absolute; top: -150px; left: -150px; max-width: 100vw; max-height: 100vh; width: 400px; height: 400px; background: var(--gt-accent); filter: blur(120px); opacity: 0.15; z-index: 0; border-radius: 50%;"></div>
@@ -426,7 +426,7 @@ require_once 'includes/functions.php';
                 <div style="position: relative; z-index: 1;">
                     <span style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 20px; background: var(--gt-card-hover); border: 1px solid var(--gt-border); color: var(--gt-text); font-family: var(--font-display); font-weight: 700; font-size: 0.9rem; border-radius: 30px; margin-bottom: 2rem; letter-spacing: 2px;"><span style="color: var(--gt-accent); font-size: 1.2rem; line-height: 1;">●</span> READY TO START?</span>
                     
-                    <h2 style="font-size: clamp(2rem, 8vw, 5.5rem); line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -2px;">Your Future<br><span style="color: transparent; -webkit-text-stroke: 1px var(--gt-accent);">Starts With One Decision.</span></h2>
+                    <h2 style="font-size: clamp(1.6rem, 7vw, 4rem); line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -2px;">Your Future<br><span style="color: transparent; -webkit-text-stroke: 1px var(--gt-accent);">Starts With One Decision.</span></h2>
                     
                     <p class="text-muted" style="font-size: 1.25rem; margin-bottom: 3.5rem; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">Join thousands of students and transform your career. Learn the skills. Build the projects. Create the future.</p>
                     
@@ -446,7 +446,7 @@ require_once 'includes/functions.php';
     <!-- Newsletter / Stay Updated Section -->
     <section class="section" style="padding: 2rem 0;">
         <div class="container">
-            <div data-aos="fade-up" style="background: var(--gt-bg); border: 1px solid var(--gt-border); border-radius: 24px; padding: 4rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 3rem; position: relative; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+            <div data-aos="fade-up" style="background: var(--gt-bg); border: 1px solid var(--gt-border); border-radius: 24px; padding: clamp(2rem, 5vw, 4rem); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 3rem; position: relative; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
                 <div style="position: absolute; top: -50px; left: -50px; max-width: 100vw; max-height: 100vh; width: 200px; height: 200px; background: var(--gt-accent); filter: blur(100px); opacity: 0.1; z-index: 0;"></div>
                 <div style="position: absolute; bottom: -50px; right: -50px; max-width: 100vw; max-height: 100vh; width: 200px; height: 200px; background: var(--gt-accent-soft); filter: blur(100px); opacity: 0.05; z-index: 0;"></div>
                 
@@ -478,6 +478,10 @@ require_once 'includes/functions.php';
     <script src="assets/js/courses.js"></script>
 </body>
 </html>
+
+
+
+
 
 
 

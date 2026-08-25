@@ -41,18 +41,18 @@ require_once 'includes/functions.php';
     <?php include "includes/navbar.php"; ?>
 
     <!-- 01 INSIGHTS HERO (STANDARD SLIDER) -->
-    <header class="hero force-dark-mode" style="position: relative; overflow: hidden; min-height: 100vh; padding-bottom: 80px; background: #0a0c0f;">
+    <header class="hero" style="position: relative; overflow: hidden; min-height: 100vh; padding-bottom: 80px; background: #0a0c0f;">
         <!-- Swiper Container -->
         <div class="swiper heroSwiper" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Future of Web" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.4);">
+                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Future of Web" class="hero-img">
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="PHP Dev" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.4);">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="PHP Dev" class="hero-img">
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Education" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.4);">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Education" class="hero-img">
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -117,7 +117,7 @@ require_once 'includes/functions.php';
                 
                 <!-- Card 1 (Large) -->
                 <div class="ig-large filterable" data-category="development" data-aos="fade-up">
-                    <a href="insight-detail-development.php" class="article-card" style="height: 100%; text-decoration: none;">
+                    <a href="insight-detail.php" class="article-card" style="height: 100%; text-decoration: none;">
                         <div class="ac-image large">
                             <span class="ac-category">WEB DEVELOPMENT</span>
                             <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Frontend Arch">
@@ -138,7 +138,7 @@ require_once 'includes/functions.php';
 
                 <!-- Card 2 (Medium) -->
                 <div class="ig-medium filterable" data-category="ecommerce" data-aos="fade-up" data-aos-delay="100">
-                    <a href="insight-detail-ecommerce.php" class="article-card" style="height: 100%; text-decoration: none;">
+                    <a href="insight-detail.php" class="article-card" style="height: 100%; text-decoration: none;">
                         <div class="ac-image medium">
                             <span class="ac-category">E-COMMERCE</span>
                             <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="E-Commerce">
@@ -156,7 +156,7 @@ require_once 'includes/functions.php';
 
                 <!-- Card 3 (Half) -->
                 <div class="ig-half filterable" data-category="career" data-aos="fade-up">
-                    <a href="insight-detail-career.php" class="article-card" style="height: 100%; text-decoration: none;">
+                    <a href="insight-detail.php" class="article-card" style="height: 100%; text-decoration: none;">
                         <div class="ac-image medium">
                             <span class="ac-category">CAREER</span>
                             <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Career">
@@ -325,31 +325,30 @@ require_once 'includes/functions.php';
                     <span class="section-label">17 / POPULAR</span>
                     <h2 style="font-size: clamp(2rem, 5vw, 3rem); margin: 1rem 0 3rem;">Most Read.</h2>
                     
-                    <div style="display: flex; flex-direction: column; gap: 2rem;">
-                        <div style="display: flex; gap: 1.5rem; align-items: baseline;">
-                            <span style="font-family: var(--font-display); font-size: 2rem; color: var(--gt-border); font-weight: 700;">01</span>
-                            <div>
-                                <h4 style="color: var(--gt-text); font-size: 1.2rem; margin-bottom: 0.5rem; transition: color 0.3s; cursor: pointer;" onmouseover="this.style.color='var(--gt-accent)'" onmouseout="this.style.color='#fff'">The Developer's Guide to Freelancing</h4>
-                                <span style="color: var(--gt-muted); font-size: 0.85rem;">CAREER · 8 MIN READ</span>
+                                        <div style="display: flex; flex-direction: column;">
+                        <a href="insight-detail.php" class="popular-item">
+                            <span class="popular-number">01</span>
+                            <div class="popular-content">
+                                <h4 class="popular-title">The Developer's Guide to Freelancing</h4>
+                                <span class="popular-meta">CAREER · 8 MIN READ</span>
                             </div>
-                        </div>
-                        <div style="display: flex; gap: 1.5rem; align-items: baseline;">
-                            <span style="font-family: var(--font-display); font-size: 2rem; color: var(--gt-border); font-weight: 700;">02</span>
-                            <div>
-                                <h4 style="color: var(--gt-text); font-size: 1.2rem; margin-bottom: 0.5rem; transition: color 0.3s; cursor: pointer;" onmouseover="this.style.color='var(--gt-accent)'" onmouseout="this.style.color='#fff'">Is AI Replacing Web Developers?</h4>
-                                <span style="color: var(--gt-muted); font-size: 0.85rem;">DIGITAL TRENDS · 12 MIN READ</span>
+                        </a>
+                        <a href="insight-detail.php" class="popular-item">
+                            <span class="popular-number">02</span>
+                            <div class="popular-content">
+                                <h4 class="popular-title">Is AI Replacing Web Developers?</h4>
+                                <span class="popular-meta">DIGITAL TRENDS · 12 MIN READ</span>
                             </div>
-                        </div>
-                        <div style="display: flex; gap: 1.5rem; align-items: baseline;">
-                            <span style="font-family: var(--font-display); font-size: 2rem; color: var(--gt-border); font-weight: 700;">03</span>
-                            <div>
-                                <h4 style="color: var(--gt-text); font-size: 1.2rem; margin-bottom: 0.5rem; transition: color 0.3s; cursor: pointer;" onmouseover="this.style.color='var(--gt-accent)'" onmouseout="this.style.color='#fff'">Mastering CSS Grid in 2026</h4>
-                                <span style="color: var(--gt-muted); font-size: 0.85rem;">WEB DEVELOPMENT · 6 MIN READ</span>
+                        </a>
+                        <a href="insight-detail.php" class="popular-item">
+                            <span class="popular-number">03</span>
+                            <div class="popular-content">
+                                <h4 class="popular-title">Mastering CSS Grid in 2026</h4>
+                                <span class="popular-meta">WEB DEVELOPMENT · 6 MIN READ</span>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
-
                 <!-- TRENDING -->
                 <div class="ig-half" data-aos="fade-left">
                     <span class="section-label">TRENDING TOPICS</span>
@@ -386,7 +385,7 @@ require_once 'includes/functions.php';
     </section>
 
     <!-- 10 FINAL CTA -->
-    <section class="section force-dark-mode" style="padding: 8rem 0; background: var(--gt-bg); border-top: 1px solid var(--gt-border);">
+    <section class="section" style="padding: 8rem 0; background: var(--gt-bg); border-top: 1px solid var(--gt-border);">
         <div class="container" style="text-align: center;" data-aos="fade-up">
             <span class="section-label">READY TO BUILD?</span>
             <h2 style="font-size: clamp(3rem, 6vw, 4.5rem); margin: 1.5rem 0 2rem; line-height: 1.1;">Turn Knowledge<br>Into Action.</h2>
@@ -416,6 +415,10 @@ require_once 'includes/functions.php';
     <script src="assets/js/main.js?v=<?= filemtime('assets/js/main.js') ?>"></script>
 </body>
 </html>
+
+
+
+
 
 
 

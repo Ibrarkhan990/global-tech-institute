@@ -37,18 +37,18 @@ require_once 'includes/functions.php';
     <?php include "includes/navbar.php"; ?>
 
     <!-- 02 ABOUT HERO -->
-    <header class="hero force-dark-mode" style="position: relative; overflow: hidden; min-height: 100vh; padding-bottom: 80px; background: #0a0c0f;">
+    <header class="hero" style="position: relative; overflow: hidden; min-height: 100vh; padding-bottom: 80px; background: #0a0c0f;">
         <!-- Swiper Container -->
         <div class="swiper heroSwiper" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Team Collaboration" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.4);">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Team Collaboration" class="hero-img">
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Learning" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.4);">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Learning" class="hero-img">
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Building Technology" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.4);">
+                    <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Building Technology" class="hero-img">
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -60,9 +60,9 @@ require_once 'includes/functions.php';
         <div class="container" style="position: relative; z-index: 3; height: 100%; display: flex; flex-direction: column; justify-content: flex-start; padding-top: 100px;">
             <div class="hero-content" data-aos="fade-up" data-aos-duration="1000" style="max-width: 800px;">
                 <div id="breadcrumb-container" style="margin-bottom: 2rem;"></div>
-                <span class="section-label" style="text-shadow: 2px 2px 10px rgba(0,0,0,0.8);">02 / ABOUT</span>
-                <h1 style="color: var(--gt-text); font-size: clamp(3.5rem, 8vw, 6rem); line-height: 1.05; margin-bottom: 2rem; letter-spacing: -2px; text-shadow: 2px 2px 10px rgba(0,0,0,0.8);">We Build Technology.<br><span class="text-accent" style="color: transparent; -webkit-text-stroke: 1.5px var(--gt-accent);">We Build People.</span></h1>
-                <p style="color: var(--gt-muted); font-size: 1.35rem; margin-bottom: 3rem; line-height: 1.6; text-shadow: 1px 1px 5px rgba(0,0,0,0.8);">Global Tech & Institute brings together software development and practical technology education to create digital solutions and develop the people who will build tomorrow's technology.</p>
+                <span class="section-label" style="">02 / ABOUT</span>
+                <h1 style="color: var(--gt-text); font-size: clamp(3.5rem, 8vw, 6rem); line-height: 1.05; margin-bottom: 2rem; letter-spacing: -2px; ">We Build Technology.<br><span class="text-outline">We Build People.</span></h1>
+                <p style="color: var(--gt-muted); font-size: 1.35rem; margin-bottom: 3rem; line-height: 1.6; ">Global Tech & Institute brings together software development and practical technology education to create digital solutions and develop the people who will build tomorrow's technology.</p>
                 <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
                     <a href="#our-story" class="btn btn-primary" onclick="event.preventDefault(); document.querySelector('#our-story').scrollIntoView({behavior: 'smooth'})">Explore Our Story →</a>
                     <a href="#vision" class="btn" style="background: var(--gt-card-hover); color: var(--gt-text); border: 1px solid var(--gt-border-hover);" onclick="event.preventDefault(); document.querySelector('#vision').scrollIntoView({behavior: 'smooth'})">Meet Our Vision</a>
@@ -555,7 +555,7 @@ require_once 'includes/functions.php';
     </section>
 
     <!-- CTAS -->
-    <section class="section force-dark-mode" style="padding: 4rem 0;">
+    <section class="section" style="padding: clamp(3rem, 5vw, 6rem) 0;">
         <div class="container">
             <div class="grid grid-2" style="gap: 3rem;">
                 <!-- Student CTA -->
@@ -569,7 +569,7 @@ require_once 'includes/functions.php';
                     <h3 style="font-size: clamp(1.5rem, 5vw, 2.5rem); margin-bottom: 1.5rem; color: var(--gt-text);">Have a Digital<br>Project in Mind?</h3>
                     <p class="editorial-text" style="margin-bottom: 3rem;">Let's build a practical technology solution for your business.</p>
                     <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                        <a href="services.html#project-inquiry" class="btn btn-primary" style="background: #fff; color: var(--gt-inverted-text);">Start a Project &rarr;</a>
+                        <a href="services.html#project-inquiry" class="btn btn-primary">Start a Project &rarr;</a>
                         <a href="contact.php" class="btn btn-outline" style="border-color: var(--gt-border-hover);">Contact Us</a>
                     </div>
                 </div>
@@ -578,7 +578,7 @@ require_once 'includes/functions.php';
     </section>
 
     <!-- FAQ -->
-    <section id="faq" class="section force-dark-mode" style="padding: 8rem 0; background: var(--gt-surface);">
+    <section id="faq" class="section" style="padding: clamp(3rem, 5vw, 6rem) 0; background: var(--gt-bg);">
         <div class="container">
             <div style="text-align: center; margin-bottom: 4rem;" data-aos="fade-up">
                 <span class="section-label">FAQ</span>
@@ -619,11 +619,11 @@ require_once 'includes/functions.php';
     </section>
 
     <!-- FINAL STATEMENT & CTA -->
-    <section class="section force-dark-mode" style="padding: 10rem 0; text-align: center; position: relative; overflow: hidden;">
+    <section class="section" style="padding: 10rem 0; text-align: center; position: relative; overflow: hidden;">
         <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 100vw; max-height: 100vh; width: 800px; height: 800px; background: var(--gt-accent); filter: blur(300px); opacity: 0.1; z-index: 0;"></div>
         <div class="container" style="position: relative; z-index: 1;">
             <div data-aos="fade-up" style="margin-bottom: 8rem;">
-                <h2 style="font-size: clamp(3.5rem, 6vw, 5rem); line-height: 1.1; margin-bottom: 2rem; color: var(--gt-text);">Technology Changes<br>When People Know<br><span class="text-accent" style="color: transparent; -webkit-text-stroke: 1.5px var(--gt-accent);">How To Build It.</span></h2>
+                <h2 style="font-size: clamp(3.5rem, 6vw, 5rem); line-height: 1.1; margin-bottom: 2rem; color: var(--gt-text);">Technology Changes<br>When People Know<br><span class="text-outline">How To Build It.</span></h2>
                 <p class="editorial-text" style="max-width: 700px; margin: 0 auto;">Global Tech & Institute exists to connect technology, practical learning and meaningful digital solutions.</p>
             </div>
             
@@ -681,6 +681,11 @@ require_once 'includes/functions.php';
     </script>
 </body>
 </html>
+
+
+
+
+
 
 
 

@@ -36,23 +36,23 @@ require_once 'includes/functions.php';
         })();
     </script>
 </head>
-<body class="bg-dark">
+<body >
 
     <?php include "includes/navbar.php"; ?>
 
     <!-- 01 PROJECT HERO (MATCHES OTHER PAGES) -->
-    <header class="hero force-dark-mode" style="position: relative; overflow: hidden; min-height: 100vh; padding-bottom: 80px; background: #0a0c0f;">
+    <header class="hero " style="position: relative; overflow: hidden; min-height: 100vh; padding-bottom: 80px; background: #0a0c0f;">
         <!-- Swiper Container -->
         <div class="swiper heroSwiper" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1541888081622-15cb6bc78be4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Technology" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.4);">
+                    <img src="https://images.unsplash.com/photo-1541888081622-15cb6bc78be4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Technology" class="hero-img">
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Code" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.4);">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Code" class="hero-img">
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Team" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.4);">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Team" class="hero-img">
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -65,8 +65,8 @@ require_once 'includes/functions.php';
             <div class="hero-content" data-aos="fade-up" data-aos-duration="1000" style="max-width: 900px;">
                 <div id="breadcrumb-container" style="margin-bottom: 2rem;"></div>
                 <span class="section-label" style="text-shadow: 2px 2px 10px rgba(0,0,0,0.8);">04 / PROJECTS</span>
-                <h1 style="color: var(--gt-text); font-size: clamp(3.5rem, 8vw, 6.5rem); line-height: 1.05; margin-bottom: 2rem; letter-spacing: -2px; text-shadow: 2px 2px 10px rgba(0,0,0,0.8);">We Build.<br>We Ship.<br><span class="text-accent" style="color: transparent; -webkit-text-stroke: 1.5px var(--gt-accent);">We Improve.</span></h1>
-                <p style="color: var(--gt-muted); font-size: 1.35rem; margin-bottom: 3rem; line-height: 1.6; max-width: 700px; text-shadow: 1px 1px 5px rgba(0,0,0,0.8);">A selection of digital products, software systems and technology projects built by Global Tech & Institute.</p>
+                <h1 class="hero-title">We Build.<br>We Ship.<br><span class="text-accent" class="text-outline">We Improve.</span></h1>
+                <p class="hero-subtitle">A selection of digital products, software systems and technology projects built by Global Tech & Institute.</p>
                 <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
                     <a href="#project-filters" class="btn btn-primary" onclick="event.preventDefault(); document.querySelector('#project-filters').scrollIntoView({behavior: 'smooth'})">Start a Project →</a>
                     <a href="services.php" class="btn" style="background: var(--gt-card-hover); color: var(--gt-text); border: 1px solid var(--gt-border-hover);">Explore Services →</a>
@@ -396,7 +396,7 @@ require_once 'includes/functions.php';
     </section>
 
     <!-- 12 CTA -->
-    <section class="section force-dark-mode" style="padding: 10rem 0; text-align: center; position: relative; overflow: hidden; background: var(--gt-bg);">
+    <section class="section " style="padding: 10rem 0; text-align: center; position: relative; overflow: hidden; background: var(--gt-bg);">
         <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 100vw; max-height: 100vh; width: 800px; height: 800px; background: var(--gt-accent); filter: blur(300px); opacity: 0.1; z-index: 1; pointer-events: none;"></div>
         <div class="container" style="position: relative; z-index: 2;" data-aos="zoom-in">
             <span class="section-label">READY TO BUILD?</span>
@@ -420,6 +420,8 @@ require_once 'includes/functions.php';
     <script src="assets/js/main.js?v=<?= filemtime('assets/js/main.js') ?>"></script>
 </body>
 </html>
+
+
 
 
 

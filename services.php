@@ -37,18 +37,18 @@ require_once 'includes/functions.php';
     <?php include "includes/navbar.php"; ?>
 
     <!-- Hero Section -->
-    <header class="hero force-dark-mode" style="position: relative; overflow: hidden; min-height: 100vh; padding-bottom: 80px; background: #0a0c0f;">
+    <header class="hero" style="position: relative; overflow: hidden; min-height: 100vh; padding-bottom: 80px; background: #0a0c0f;">
         <!-- Swiper Container -->
         <div class="swiper heroSwiper" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Technology" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.4);">
+                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Technology" class="hero-img">
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Code" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.4);">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Code" class="hero-img">
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Team" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.4);">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Team" class="hero-img">
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -60,9 +60,9 @@ require_once 'includes/functions.php';
         <div class="container" style="position: relative; z-index: 3; height: 100%; display: flex; flex-direction: column; justify-content: flex-start; padding-top: 100px;">
             <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
                 <div id="breadcrumb-container" style="margin-bottom: 2rem;"></div>
-                <span class="section-label" style="text-shadow: 2px 2px 10px rgba(0,0,0,0.8);">03 / SERVICES</span>
-                <h1 style="color: var(--gt-text); font-size: clamp(3.5rem, 8vw, 5.5rem); line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -2px; text-shadow: 2px 2px 10px rgba(0,0,0,0.8);">Digital Products.<br><span class="text-accent" style="color: transparent; -webkit-text-stroke: 1.5px var(--gt-accent);">Built With Purpose.</span></h1>
-                <p style="color: var(--gt-muted); font-size: 1.25rem; max-width: 600px; margin-bottom: 2.5rem; line-height: 1.6; text-shadow: 1px 1px 5px rgba(0,0,0,0.8);">We design and develop modern digital products, software systems and technology solutions that solve real business problems.</p>
+                <span class="section-label" style="">03 / SERVICES</span>
+                <h1 style="color: var(--gt-text); font-size: clamp(3.5rem, 8vw, 5.5rem); line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -2px; ">Digital Products.<br><span class="text-accent" style="color: transparent; -webkit-text-stroke: 1.5px var(--gt-accent);">Built With Purpose.</span></h1>
+                <p style="color: var(--gt-muted); font-size: 1.25rem; max-width: 600px; margin-bottom: 2.5rem; line-height: 1.6; ">We design and develop modern digital products, software systems and technology solutions that solve real business problems.</p>
                 <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
                     <a href="#project-inquiry" class="btn btn-primary" onclick="event.preventDefault(); document.querySelector('#project-inquiry').scrollIntoView({behavior: 'smooth'})">Start a Project →</a>
                     <a href="#selected-work" class="btn" style="background: var(--gt-card-hover); color: var(--gt-text); border: 1px solid var(--gt-border-hover);" onclick="event.preventDefault(); document.querySelector('#selected-work').scrollIntoView({behavior: 'smooth'})">View Our Work</a>
@@ -366,7 +366,7 @@ require_once 'includes/functions.php';
     </section>
 
     <!-- 30 Final CTA -->
-    <section class="section force-dark-mode" style="padding: 8rem 0; text-align: center;">
+    <section class="section" style="padding: 8rem 0; text-align: center;">
         <div class="container" data-aos="zoom-in">
             <span class="section-label">READY WHEN YOU ARE</span>
             <h2 style="font-size: clamp(3rem, 6vw, 4.5rem); margin-top: 1rem; margin-bottom: 1.5rem;">Let's Build<br>Something Useful.</h2>
@@ -390,6 +390,9 @@ require_once 'includes/functions.php';
     <script src="assets/js/services.js"></script>
 </body>
 </html>
+
+
+
 
 
 

@@ -37,9 +37,9 @@ require_once 'includes/functions.php';
     <?php include "includes/navbar.php"; ?>
 
     <!-- 01 HERO -->
-    <header class="hero force-dark-mode" style="position: relative; overflow: hidden; min-height: 80vh; padding-bottom: clamp(3rem, 6vw, 5rem); background: #0a0c0f;">
+    <header class="hero " style="position: relative; overflow: hidden; min-height: 80vh; padding-bottom: clamp(3rem, 6vw, 5rem); background: #0a0c0f;">
         <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
-            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Student coding" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.35);">
+            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Student coding" class="hero-img">
         </div>
         
         <div class="hero-tech-grid" style="z-index: 2; opacity: 0.1;"></div>
@@ -49,8 +49,8 @@ require_once 'includes/functions.php';
             <div class="hero-content" data-aos="fade-up" data-aos-duration="1000" style="max-width: 900px;">
                 <div id="breadcrumb-container" style="margin-bottom: var(--space-md);"></div>
                 <span class="section-label" style="text-shadow: 2px 2px 10px rgba(0,0,0,0.8);">07 / ADMISSIONS</span>
-                <h1 style="color: var(--gt-text); font-size: clamp(3.5rem, 8vw, 6.5rem); line-height: 1.05; margin-bottom: var(--space-md); letter-spacing: -2px; text-shadow: 2px 2px 10px rgba(0,0,0,0.8);">Start Your<br><span class="text-accent" style="color: transparent; -webkit-text-stroke: 1.5px var(--gt-accent);">Future.</span></h1>
-                <p style="color: var(--gt-muted); font-size: clamp(1rem, 3vw, 1.35rem); margin-bottom: var(--space-lg); line-height: 1.6; max-width: 700px; text-shadow: 1px 1px 5px rgba(0,0,0,0.8);">Join the next generation of tech professionals. Apply for our upcoming batches and master practical software engineering.</p>
+                <h1 class="hero-title">Start Your<br><span class="text-accent" class="text-outline">Future.</span></h1>
+                <p class="hero-subtitle">Join the next generation of tech professionals. Apply for our upcoming batches and master practical software engineering.</p>
                 <a href="#application-portal" class="btn btn-primary" onclick="event.preventDefault(); document.querySelector('#application-portal').scrollIntoView({behavior: 'smooth'})">START APPLICATION →</a>
             </div>
         </div>
@@ -279,6 +279,8 @@ require_once 'includes/functions.php';
     <script src="assets/js/main.js?v=<?= filemtime('assets/js/main.js') ?>"></script>
 </body>
 </html>
+
+
 
 
 

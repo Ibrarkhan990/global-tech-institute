@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const breadcrumbContainer = document.getElementById('breadcrumb-container');
     const dynamicPageTitle = document.getElementById('dynamic-page-title');
     
-    if (page && page !== 'index.html') {
+    if (page && (page !== 'index.html' && page !== 'index.php' && page !== '')) {
         let rawName = page.split('.')[0].replace(/-/g, ' ');
         if (rawName === 'about') rawName = 'about us'; // specifically match example
         
@@ -112,5 +112,6 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
         }
     }
+
 
 
