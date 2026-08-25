@@ -132,7 +132,7 @@
         
         if (mobileMenuBtn && navLinks) {
             mobileMenuBtn.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
+                navLinks.classList.toggle('active'); document.querySelector('.navbar').classList.toggle('menu-open');
                 if (navLinks.classList.contains('active')) {
                     mobileMenuBtn.innerHTML = '✕';
                 } else {
@@ -143,4 +143,5 @@
     });
 </script>
     </nav>
+
 

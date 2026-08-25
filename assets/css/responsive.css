@@ -1,9 +1,7 @@
 /* Responsive Adjustments */
 
 @media (max-width: 1024px) {
-  .hero h1 {
-    font-size: 4rem;
-  }
+  
   
   .split-section {
     grid-template-columns: 1fr;
@@ -93,9 +91,7 @@
     cursor: pointer;
   }
   
-  .hero h1 {
-    font-size: 3rem;
-  }
+  
   
   .data-strip .grid,
   .grid-4.text-center {
@@ -124,9 +120,7 @@
 }
 
 @media (max-width: 480px) {
-  .hero h1 {
-    font-size: 2.5rem;
-  }
+  
   
   .hero p {
     font-size: 1rem;
@@ -145,5 +139,17 @@
     gap: var(--space-sm);
   }
 }
+
+
+
+/* Mobile Menu Open State */
+.navbar.menu-open {
+    background-color: var(--gt-surface) !important;
+    border-bottom: 1px solid var(--gt-border);
+}
+
+/* Fix Hero Overlap on Mobile */
+@media (max-width: 768px) { html:not([data-theme="light"]) .hero > .container { padding-top: 140px !important; } }
+
 
 

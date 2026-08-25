@@ -6,7 +6,7 @@
   width: 100%;
   padding: var(--space-md) 5%;
   z-index: 1000;
-  display: flex !important;
+  display: flex;
   justify-content: space-between;
   align-items: center !important;
   transition: var(--transition-theme);
@@ -32,7 +32,7 @@
 }
 
 .nav-links {
-  display: flex !important;
+  display: flex;
   gap: var(--space-md);
 }
 
@@ -78,7 +78,7 @@
   position: relative;
   overflow: hidden;
   min-height: 100vh !important;
-  display: flex !important;
+  display: flex;
   align-items: center !important;
   background-color: var(--gt-bg);
 }
@@ -104,7 +104,7 @@
 }
 
 .hero-actions {
-  display: flex !important;
+  display: flex;
   gap: var(--space-sm);
 }
 
@@ -216,7 +216,7 @@
 .split-panel li {
   margin-bottom: 8px;
   color: var(--gt-muted);
-  display: flex !important;
+  display: flex;
   align-items: center !important;
 }
 
@@ -233,7 +233,7 @@
 }
 
 .interactive-row {
-  display: flex !important;
+  display: flex;
   align-items: center !important;
   padding: var(--space-md) 0;
   border-bottom: 1px solid var(--gt-border);
@@ -335,7 +335,7 @@
 }
 
 .course-meta {
-  display: flex !important;
+  display: flex;
   gap: var(--space-md);
   margin-top: var(--space-sm);
   padding-top: var(--space-sm);
@@ -384,7 +384,7 @@
 }
 
 .footer-bottom {
-  display: flex !important;
+  display: flex;
   justify-content: space-between;
   align-items: center !important;
   padding-top: var(--space-md);
@@ -394,7 +394,7 @@
 }
 
 .social-links {
-  display: flex !important;
+  display: flex;
   gap: var(--space-md);
 }
 
@@ -432,7 +432,7 @@
     color: var(--gt-muted);
 }
 .course-list {
-    display: flex !important;
+    display: flex;
     flex-direction: column;
     gap: 2rem;
 }
@@ -460,13 +460,13 @@
     background: var(--gt-accent);
 }
 .course-card-header {
-    display: flex !important;
+    display: flex;
     justify-content: space-between;
     align-items: center !important;
     margin-bottom: 1.5rem;
 }
 .course-tags {
-    display: flex !important;
+    display: flex;
     gap: 10px;
     flex-wrap: wrap;
 }
@@ -476,7 +476,7 @@
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 1px;
-    display: flex !important;
+    display: flex;
     align-items: center !important;
     gap: 6px;
 }
@@ -520,7 +520,7 @@
     font-weight: 700;
     color: var(--gt-text-strong);
     font-size: 1.1rem;
-    display: flex !important;
+    display: flex;
     align-items: center !important;
     gap: 8px;
 }
@@ -528,7 +528,7 @@
     color: var(--gt-accent);
 }
 .course-actions {
-    display: flex !important;
+    display: flex;
     gap: 1rem;
     flex-wrap: wrap;
 }
@@ -537,7 +537,7 @@
     min-width: 150px;
 }
 .view-all-card {
-    display: flex !important;
+    display: flex;
     align-items: center !important;
     justify-content: space-between;
     padding: 1.5rem 2.5rem;
@@ -560,7 +560,7 @@
     height: 44px;
     border-radius: 50%;
     background: var(--gt-surface);
-    display: flex !important;
+    display: flex;
     align-items: center !important;
     justify-content: center;
     border: 1px solid var(--gt-border);
@@ -579,7 +579,7 @@
     }
 }
 .course-discovery {
-  display: flex !important;
+  display: flex;
   flex-direction: column;
   gap: var(--space-lg);
 }
@@ -602,7 +602,7 @@
 }
 
 .course-filters {
-    display: flex !important;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
@@ -711,7 +711,7 @@ html[data-theme="light"] .swiper-pagination-bullet {
 
 /* LIGHT MODE SPLIT HERO LAYOUT */
 html[data-theme="light"] .hero {
-    display: flex !important;
+    display: flex;
     flex-direction: row-reverse !important;
     align-items: center !important;
     background: var(--gt-bg) !important;
@@ -781,3 +781,4 @@ html[data-theme="light"] .navbar:not(.scrolled) .nav-link {
     color: var(--gt-text-strong) !important;
     text-shadow: none !important;
 }
+
