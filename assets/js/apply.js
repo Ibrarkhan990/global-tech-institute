@@ -109,16 +109,21 @@ function submitApplication(e) {
         method: 'POST',
         body: formData
     })
-    .then(response => response.json())
+    .then(async response => {
+        const text = await response.text();
+        try {
+            return JSON.parse(text);
+        } catch(err) {
+            throw new Error("Server returned: " + text.substring(0, 100));
+        }
+    })
     .then(data => {
         btn.classList.remove('loading');
         if (data.success) {
-            // Hide form and progress
             document.getElementById('main-apply-form').style.display = 'none';
             document.querySelector('.apply-progress').style.display = 'none';
             document.querySelector('.apply-header').style.display = 'none';
             
-            // Show success
             const successBox = document.getElementById('apply-success');
             successBox.style.display = 'block';
             
@@ -129,6 +134,6 @@ function submitApplication(e) {
     })
     .catch(error => {
         btn.classList.remove('loading');
-        alert('Something went wrong. Please try again.');
+        alert('Error: ' + error.message);
     });
 }

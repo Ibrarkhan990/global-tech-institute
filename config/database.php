@@ -15,7 +15,7 @@ class Database {
 
     private function __construct() {
         $dsn = sprintf(
-            'mysql:host=%s;dbname=%s;charset=%s',
+            'mysql:host=%s;port=%s;dbname=%s;charset=%s',
             DB_HOST,
             DB_PORT,
             DB_NAME,
@@ -34,7 +34,7 @@ class Database {
             // Log the real error, show a generic message
             error_log('[GTI-DB] Connection failed: ' . $e->getMessage());
             if (defined('ADMIN_CONTEXT') && ADMIN_CONTEXT === true) {
-                throw new RuntimeException('Database connection failed. Please check your XAMPP MySQL service.');
+                throw new RuntimeException('Database connection failed. Please check your hosting MySQL service. Error: ' . $e->getMessage());
             }
             throw new RuntimeException('A database error occurred. Please try again later.');
         }

@@ -86,5 +86,6 @@ try {
 
 } catch (Exception $e) {
     error_log('[GTI-Apply] Error: ' . $e->getMessage());
-    json_response(false, 'Something went wrong. Please try again.');
+    json_response(false, 'Error: ' . $e->getMessage());
 }
+
