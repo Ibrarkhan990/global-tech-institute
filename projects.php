@@ -63,7 +63,6 @@ require_once 'includes/functions.php';
 
         <div class="container" style="position: relative; z-index: 3; height: 100%; display: flex; flex-direction: column; justify-content: flex-start; padding-top: 100px;">
             <div class="hero-content" data-aos="fade-up" data-aos-duration="1000" style="max-width: 900px;">
-                <div id="breadcrumb-container" style="margin-bottom: 2rem;"></div>
                 <span class="section-label" style="text-shadow: 2px 2px 10px rgba(0,0,0,0.8);">04 / PROJECTS</span>
                 <h1 class="hero-title">We Build.<br>We Ship.<br><span class="text-accent" class="text-outline">We Improve.</span></h1>
                 <p class="hero-subtitle">A selection of digital products, software systems and technology projects built by Global Tech & Institute.</p>
@@ -420,6 +419,7 @@ require_once 'includes/functions.php';
     <script src="assets/js/main.js?v=<?= filemtime('assets/js/main.js') ?>"></script>
 </body>
 </html>
+
 
 
 

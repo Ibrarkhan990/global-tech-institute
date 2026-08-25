@@ -59,7 +59,6 @@ require_once 'includes/functions.php';
         
         <div class="container" style="position: relative; z-index: 3; height: 100%; display: flex; flex-direction: column; justify-content: flex-start; padding-top: 100px;">
             <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
-                <div id="breadcrumb-container" style="margin-bottom: 2rem;"></div>
                 <span class="section-label" style="">03 / SERVICES</span>
                 <h1 style="color: var(--gt-text); font-size: clamp(3.5rem, 8vw, 5.5rem); line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -2px; ">Digital Products.<br><span class="text-accent" style="color: transparent; -webkit-text-stroke: 1.5px var(--gt-accent);">Built With Purpose.</span></h1>
                 <p style="color: var(--gt-muted); font-size: 1.25rem; max-width: 600px; margin-bottom: 2.5rem; line-height: 1.6; ">We design and develop modern digital products, software systems and technology solutions that solve real business problems.</p>
@@ -390,6 +389,7 @@ require_once 'includes/functions.php';
     <script src="assets/js/services.js"></script>
 </body>
 </html>
+
 
 
 

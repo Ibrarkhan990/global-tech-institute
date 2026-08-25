@@ -63,7 +63,6 @@ require_once 'includes/functions.php';
 
         <div class="container" style="position: relative; z-index: 3; height: 100%; display: flex; flex-direction: column; justify-content: flex-start; padding-top: 100px;">
             <div class="hero-content" data-aos="fade-up" data-aos-duration="1000" style="max-width: 900px;">
-                <div id="breadcrumb-container" style="margin-bottom: 2rem;"></div>
                 <span class="section-label" style="text-shadow: 2px 2px 10px rgba(0,0,0,0.8);">05 / INSIGHTS</span>
                 <h1 style="color: var(--gt-text); font-size: clamp(3.5rem, 8vw, 6.5rem); line-height: 1.05; margin-bottom: 2rem; letter-spacing: -2px; text-shadow: 2px 2px 10px rgba(0,0,0,0.8);">Ideas.<br>Knowledge.<br><span class="text-accent" style="color: transparent; -webkit-text-stroke: 1.5px var(--gt-accent);">What's Next.</span></h1>
                 <p style="color: var(--gt-muted); font-size: 1.35rem; margin-bottom: 3rem; line-height: 1.6; max-width: 700px; text-shadow: 1px 1px 5px rgba(0,0,0,0.8);">Explore technology, software development, education, career insights, digital trends and practical knowledge from Global Tech & Institute.</p>
@@ -415,6 +414,7 @@ require_once 'includes/functions.php';
     <script src="assets/js/main.js?v=<?= filemtime('assets/js/main.js') ?>"></script>
 </body>
 </html>
+
 
 
 

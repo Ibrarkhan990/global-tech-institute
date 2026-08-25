@@ -89,7 +89,7 @@
 
         <!-- Navbar -->
     <nav class="navbar">
-        <a href="index.php" class="nav-brand" style="display: flex; align-items: center;"><img src="assets/logo/logo_accent.png" alt="Global Tech &amp; Institute" style="max-height: 55px; width: auto; border-radius: 6px;"></a>
+        <a href="index.php" class="nav-brand" style="display: flex; align-items: center;"><img src="assets/logo/logo_accent.png" alt="Global Tech &amp; Institute" class="logo-dark" style="max-height: 55px; width: auto; border-radius: 6px;"><img src="assets/logo/logo.png" alt="Global Tech &amp; Institute" class="logo-light" style="max-height: 55px; width: auto; border-radius: 6px; display: none;"></a>
         
         <div class="nav-links">
             <a href="index.php" class="nav-link">Home</a>
@@ -143,3 +143,4 @@
     });
 </script>
     </nav>
+

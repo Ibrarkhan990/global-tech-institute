@@ -54,7 +54,6 @@ require_once 'includes/functions.php';
 
         <div class="container" style="position: relative; z-index: 2; height: 100%; display: flex; flex-direction: column; justify-content: flex-start; padding-top: 100px;">
             <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
-                <div id="breadcrumb-container" style="margin-bottom: 2rem;"></div>
                 <h1 style="color: var(--gt-text); text-shadow: 2px 2px 10px rgba(0,0,0,0.5);">Learn Fast.<br>Code Hard.<br><span class="text-accent">Shape the Future.</span></h1>
                 <p style="color: #e0e0e0; text-shadow: 1px 1px 5px rgba(0,0,0,0.5); max-width: 600px;">Explore our industry-leading programs designed to transform beginners into highly-paid technology professionals.</p>
                 <div class="hero-actions" style="margin-top: 2rem;">
@@ -365,6 +364,7 @@ require_once 'includes/functions.php';
     <script src="assets/js/courses.js"></script>
 </body>
 </html>
+
 
 
 

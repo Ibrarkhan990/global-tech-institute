@@ -7,3 +7,4 @@ $output = shell_exec('c:\xampp2\mysql\bin\mysqldump.exe -u root global_tech_inst
 echo $output;
 exit;
 ?>
+

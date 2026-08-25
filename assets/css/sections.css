@@ -6,9 +6,9 @@
   width: 100%;
   padding: var(--space-md) 5%;
   z-index: 1000;
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
-  align-items: center;
+  align-items: center !important;
   transition: var(--transition-theme);
 }
 
@@ -32,7 +32,7 @@
 }
 
 .nav-links {
-  display: flex;
+  display: flex !important;
   gap: var(--space-md);
 }
 
@@ -77,9 +77,9 @@
 .hero {
   position: relative;
   overflow: hidden;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
+  min-height: 100vh !important;
+  display: flex !important;
+  align-items: center !important;
   background-color: var(--gt-bg);
 }
 
@@ -104,7 +104,7 @@
 }
 
 .hero-actions {
-  display: flex;
+  display: flex !important;
   gap: var(--space-sm);
 }
 
@@ -216,8 +216,8 @@
 .split-panel li {
   margin-bottom: 8px;
   color: var(--gt-muted);
-  display: flex;
-  align-items: center;
+  display: flex !important;
+  align-items: center !important;
 }
 
 .split-panel li::before {
@@ -233,8 +233,8 @@
 }
 
 .interactive-row {
-  display: flex;
-  align-items: center;
+  display: flex !important;
+  align-items: center !important;
   padding: var(--space-md) 0;
   border-bottom: 1px solid var(--gt-border);
   transition: var(--transition-theme);
@@ -335,7 +335,7 @@
 }
 
 .course-meta {
-  display: flex;
+  display: flex !important;
   gap: var(--space-md);
   margin-top: var(--space-sm);
   padding-top: var(--space-sm);
@@ -384,9 +384,9 @@
 }
 
 .footer-bottom {
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
-  align-items: center;
+  align-items: center !important;
   padding-top: var(--space-md);
   border-top: 1px solid var(--gt-border);
   color: var(--gt-muted);
@@ -394,7 +394,7 @@
 }
 
 .social-links {
-  display: flex;
+  display: flex !important;
   gap: var(--space-md);
 }
 
@@ -432,7 +432,7 @@
     color: var(--gt-muted);
 }
 .course-list {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     gap: 2rem;
 }
@@ -460,13 +460,13 @@
     background: var(--gt-accent);
 }
 .course-card-header {
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
-    align-items: center;
+    align-items: center !important;
     margin-bottom: 1.5rem;
 }
 .course-tags {
-    display: flex;
+    display: flex !important;
     gap: 10px;
     flex-wrap: wrap;
 }
@@ -476,8 +476,8 @@
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 1px;
-    display: flex;
-    align-items: center;
+    display: flex !important;
+    align-items: center !important;
     gap: 6px;
 }
 .tag-bestseller {
@@ -520,15 +520,15 @@
     font-weight: 700;
     color: var(--gt-text-strong);
     font-size: 1.1rem;
-    display: flex;
-    align-items: center;
+    display: flex !important;
+    align-items: center !important;
     gap: 8px;
 }
 .stat-item .stat-value svg {
     color: var(--gt-accent);
 }
 .course-actions {
-    display: flex;
+    display: flex !important;
     gap: 1rem;
     flex-wrap: wrap;
 }
@@ -537,8 +537,8 @@
     min-width: 150px;
 }
 .view-all-card {
-    display: flex;
-    align-items: center;
+    display: flex !important;
+    align-items: center !important;
     justify-content: space-between;
     padding: 1.5rem 2.5rem;
     background: var(--gt-control-bg);
@@ -560,8 +560,8 @@
     height: 44px;
     border-radius: 50%;
     background: var(--gt-surface);
-    display: flex;
-    align-items: center;
+    display: flex !important;
+    align-items: center !important;
     justify-content: center;
     border: 1px solid var(--gt-border);
 }
@@ -579,7 +579,7 @@
     }
 }
 .course-discovery {
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   gap: var(--space-lg);
 }
@@ -602,7 +602,7 @@
 }
 
 .course-filters {
-    display: flex;
+    display: flex !important;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
@@ -615,7 +615,7 @@
     border-radius: 30px;
     border: 1px solid var(--gt-border);
     display: inline-flex;
-    align-items: center;
+    align-items: center !important;
     gap: 10px;
 }
 .course-filters .filter-btn:hover, .course-filters .filter-btn.active {
@@ -707,4 +707,77 @@ html[data-theme="light"] .hero-btn-outline:hover {
 /* Swiper Light Mode Fix */
 html[data-theme="light"] .swiper-pagination-bullet {
     background: var(--gt-text) !important;
+}
+
+/* LIGHT MODE SPLIT HERO LAYOUT */
+html[data-theme="light"] .hero {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    align-items: center !important;
+    background: var(--gt-bg) !important;
+    min-height: 100vh !important;
+}
+html[data-theme="light"] .hero > div:first-child {
+    position: relative !important;
+    flex: 0 0 45% !important;
+    height: 70vh !important;
+    border-radius: 24px;
+    margin-right: 5%;
+    box-shadow: 0 30px 60px rgba(15, 23, 42, 0.15);
+    z-index: 3 !important; overflow: hidden !important;
+}
+html[data-theme="light"] .hero-img {
+    filter: brightness(1) !important;
+    opacity: 1 !important;
+}
+html[data-theme="light"] .hero > .container {
+    flex: 0 0 50% !important;
+    width: 50% !important;
+    padding: 0 2rem 0 5% !important;
+    margin: 0 !important;
+    height: auto !important;
+}
+html[data-theme="light"] .hero-metadata {
+    display: none !important;
+}
+html[data-theme="light"] .hero-title {
+    font-size: clamp(2.5rem, 5vw, 4.5rem) !important;
+    color: var(--gt-text-strong) !important;
+}
+html[data-theme="light"] .hero-subtitle {
+    color: var(--gt-muted) !important;
+}
+/* Ensure the glowing orb is positioned correctly or hidden */
+html[data-theme="light"] .hero > div[style*="background: var(--gt-accent)"] {
+    opacity: 0.05 !important;
+}
+
+@media (max-width: 992px) {
+    html[data-theme="light"] .hero {
+        flex-direction: column !important;
+        padding-top: 120px !important;
+        padding-bottom: 3rem !important;
+        min-height: auto !important;
+    }
+    html[data-theme="light"] .hero > .container {
+        flex: 1 1 auto !important;
+        width: 100% !important;
+        padding: 0 5% !important;
+        margin-bottom: 3rem !important;
+    }
+    html[data-theme="light"] .hero > div:first-child {
+        flex: 1 1 auto !important;
+        width: 90% !important;
+        margin: 0 auto !important;
+        height: 40vh !important;
+    }
+}
+
+
+
+
+/* LIGHT MODE NAVBAR FIX */
+html[data-theme="light"] .navbar:not(.scrolled) .nav-link {
+    color: var(--gt-text-strong) !important;
+    text-shadow: none !important;
 }

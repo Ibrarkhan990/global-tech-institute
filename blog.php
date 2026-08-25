@@ -48,8 +48,7 @@ require_once 'includes/functions.php';
             <div data-aos="fade-down" data-aos-duration="800">
                 <h1 id="dynamic-page-title" style="color: var(--gt-text); font-size: 3.5rem; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 0;">GLOBAL TECH</h1>
             </div>
-            <div id="breadcrumb-container" data-aos="fade-up" data-aos-delay="200" style="margin-top: 1.5rem;"></div>
-        </div>
+            </div>
     </header>
 
     <section class="py-section bg-primary text-white text-center" style="padding-top: 100px; padding-bottom: 60px;">
@@ -82,6 +81,7 @@ require_once 'includes/functions.php';
     <script src="assets/js/main.js?v=<?= filemtime('assets/js/main.js') ?>"></script>
 </body>
 </html>
+
 
 
 

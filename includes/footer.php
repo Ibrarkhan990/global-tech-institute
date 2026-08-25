@@ -5,7 +5,7 @@
             <!-- Column 1 -->
             <div class="footer-brand">
                 <a href="index.php" style="display: flex; align-items: center; gap: 12px; text-decoration: none; margin-bottom: 1.5rem;">
-                    <img src="assets/logo/logo_accent.png" alt="Logo" style="height: 28px; width: auto; object-fit: contain;">
+                    <img src="assets/logo/logo_accent.png" alt="Logo" class="logo-dark" style="height: 28px; width: auto; object-fit: contain;"><img src="assets/logo/logo.png" alt="Logo" class="logo-light" style="height: 28px; width: auto; object-fit: contain; display: none;">
                     <span style="font-family: var(--font-display); font-size: 1.8rem; font-weight: 700; color: var(--gt-text); letter-spacing: -0.5px; line-height: 1;">GLOB TECH</span>
                 </a>
                 <p style="color: var(--gt-muted); font-size: 1rem; line-height: 1.7; margin-bottom: 2.5rem; max-width: 400px;">

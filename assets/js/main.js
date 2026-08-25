@@ -84,34 +84,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Dynamic Title and Breadcrumb
-    const breadcrumbContainer = document.getElementById('breadcrumb-container');
-    const dynamicPageTitle = document.getElementById('dynamic-page-title');
-    
-    if (page && (page !== 'index.html' && page !== 'index.php' && page !== '')) {
-        let rawName = page.split('.')[0].replace(/-/g, ' ');
-        if (rawName === 'about') rawName = 'about us'; // specifically match example
-        
-        // Capitalize words
-        const pageName = rawName.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
-        
-        if (dynamicPageTitle) {
-            dynamicPageTitle.innerText = pageName.toUpperCase();
-        }
-        
-        if (breadcrumbContainer) {
-            breadcrumbContainer.innerHTML = `
-                <div style="display: inline-flex; align-items: center; background: #222529; box-shadow: 0 15px 35px rgba(0,0,0,0.4); padding: 10px 24px; border-radius: 50px; font-size: 1.05rem; font-family: var(--font-primary); font-weight: 500;">
-                    <a href="index.html" style="color: #ffffff; text-decoration: none; display: flex; align-items: center; gap: 8px; transition: color 0.3s;" onmouseover="this.style.color='var(--gt-accent)'" onmouseout="this.style.color='#ffffff'">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-                        Home
-                    </a>
-                    <span style="display: inline-block; margin: 0 12px; color: #DBA84E; font-style: italic; font-weight: 800; transform: skewX(-10deg);">/</span> 
-                    <span style="color: #F6CE6A; font-weight: 700;">${pageName}</span>
-                </div>
-            `;
-        }
-    }
+    // Breadcrumbs removed by user request
+
+
 
 
 

@@ -35,9 +35,7 @@ require_once 'includes/functions.php';
 </head>
 <body>
     <?php include "includes/navbar.php"; ?>
-    <div id="breadcrumb-container"></div>
-
-        <!-- Hero Section -->
+    <!-- Hero Section -->
     <header class="hero" style="position: relative; overflow: hidden; min-height: 100vh; padding-bottom: clamp(3rem, 6vw, 5rem);">
         <!-- Swiper Container -->
         <div class="swiper heroSwiper" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;">
@@ -478,6 +476,7 @@ require_once 'includes/functions.php';
     <script src="assets/js/courses.js"></script>
 </body>
 </html>
+
 
 
 

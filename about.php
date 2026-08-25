@@ -59,7 +59,6 @@ require_once 'includes/functions.php';
 
         <div class="container" style="position: relative; z-index: 3; height: 100%; display: flex; flex-direction: column; justify-content: flex-start; padding-top: 100px;">
             <div class="hero-content" data-aos="fade-up" data-aos-duration="1000" style="max-width: 800px;">
-                <div id="breadcrumb-container" style="margin-bottom: 2rem;"></div>
                 <span class="section-label" style="">02 / ABOUT</span>
                 <h1 style="color: var(--gt-text); font-size: clamp(3.5rem, 8vw, 6rem); line-height: 1.05; margin-bottom: 2rem; letter-spacing: -2px; ">We Build Technology.<br><span class="text-outline">We Build People.</span></h1>
                 <p style="color: var(--gt-muted); font-size: 1.35rem; margin-bottom: 3rem; line-height: 1.6; ">Global Tech & Institute brings together software development and practical technology education to create digital solutions and develop the people who will build tomorrow's technology.</p>
@@ -681,6 +680,7 @@ require_once 'includes/functions.php';
     </script>
 </body>
 </html>
+
 
 
 

@@ -130,3 +130,11 @@ html, body, .navbar, .card, .btn, section, footer, input, textarea, select, .the
         gap: 2rem;
     }
 }
+
+/* Theme Logo Toggling */
+html[data-theme="light"] .logo-dark {
+    display: none !important;
+}
+html[data-theme="light"] .logo-light {
+    display: block !important;
+}

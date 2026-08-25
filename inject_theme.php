@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $files = glob("*.php");
 $exclude = ['database.php', 'functions.php', 'submit_application.php', 'submit_message.php'];
 
@@ -14,3 +14,4 @@ foreach ($files as $file) {
     }
 }
 ?>
+

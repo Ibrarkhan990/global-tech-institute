@@ -47,7 +47,6 @@ require_once 'includes/functions.php';
 
         <div class="container" style="position: relative; z-index: 3; height: 100%; display: flex; flex-direction: column; justify-content: flex-start; padding-top: clamp(6rem, 15vh, 120px); padding-bottom: 0;">
             <div class="hero-content" data-aos="fade-up" data-aos-duration="1000" style="max-width: 900px;">
-                <div id="breadcrumb-container" style="margin-bottom: var(--space-md);"></div>
                 <span class="section-label" style="text-shadow: 2px 2px 10px rgba(0,0,0,0.8);">07 / ADMISSIONS</span>
                 <h1 class="hero-title">Start Your<br><span class="text-accent" class="text-outline">Future.</span></h1>
                 <p class="hero-subtitle">Join the next generation of tech professionals. Apply for our upcoming batches and master practical software engineering.</p>
@@ -279,6 +278,7 @@ require_once 'includes/functions.php';
     <script src="assets/js/main.js?v=<?= filemtime('assets/js/main.js') ?>"></script>
 </body>
 </html>
+
 
 
 
