@@ -101,7 +101,7 @@ require_once 'includes/functions.php';
         <div class="container">
             <div style="margin-bottom: 5rem;" data-aos="fade-up">
                 <span class="section-label">02 / OUR STORY</span>
-                <h2 style="font-size: clamp(2.2rem, 6vw, 3.5rem); margin-top: 1rem;">From Ideas<br>To Impact.</h2>
+                <h2 style="font-size: clamp(1.8rem, 6vw, 3.5rem); margin-top: 1rem;">From Ideas<br>To Impact.</h2>
                 <p class="editorial-text" style="max-width: 800px; margin-top: 2rem;">We recognized that technology education often lacked real-world practical application, and software development needed better talent. Our organization was founded to bridge this gap—connecting learning directly to building.</p>
             </div>
             
@@ -148,7 +148,7 @@ require_once 'includes/functions.php';
                 <!-- Mission -->
                 <div style="background: var(--gt-card-bg); border: 1px solid var(--gt-border); padding: var(--space-lg); border-radius: 24px;" data-aos="fade-right">
                     <span class="section-label">04 / OUR MISSION</span>
-                    <h3 style="font-size: clamp(1.8rem, 4vw, 2.5rem); margin: 1.5rem 0 2rem;">Build Technology.<br>Build Capability.</h3>
+                    <h3 style="font-size: clamp(1.5rem, 5vw, 2.5rem); margin: 1.5rem 0 2rem;">Build Technology.<br>Build Capability.</h3>
                     <p class="editorial-text" style="margin-bottom: 2rem;">Our mission is to create useful digital solutions and provide practical technology education that helps businesses, students and professionals move forward.</p>
                     <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px; color: var(--gt-muted);">
                         <li style="display: flex; align-items: center; gap: 10px;"><span style="color: var(--gt-accent);">+</span> Practical learning</li>
@@ -162,7 +162,7 @@ require_once 'includes/functions.php';
                 <!-- Vision -->
                 <div id="vision" style="display: flex; flex-direction: column; justify-content: center; padding: 2rem;" data-aos="fade-left">
                     <span class="section-label">05 / OUR VISION</span>
-                    <h3 style="font-size: clamp(2.2rem, 6vw, 3.5rem); line-height: 1.1; margin: 1.5rem 0 2rem;">A Future Built<br><span class="text-accent">With Technology.</span></h3>
+                    <h3 style="font-size: clamp(1.8rem, 6vw, 3.5rem); line-height: 1.1; margin: 1.5rem 0 2rem;">A Future Built<br><span class="text-accent">With Technology.</span></h3>
                     <p class="editorial-text" style="font-size: 1.8rem; line-height: 1.5;">To become a trusted technology ecosystem where businesses find reliable digital solutions and people gain the skills to participate in the digital future.</p>
                 </div>
             </div>
@@ -174,7 +174,7 @@ require_once 'includes/functions.php';
         <div class="container">
             <div style="margin-bottom: 4rem;" data-aos="fade-up">
                 <span class="section-label">06 / OUR VALUES</span>
-                <h2 style="font-size: clamp(2.2rem, 6vw, 3.5rem); margin-top: 1rem;">What We<br>Stand For.</h2>
+                <h2 style="font-size: clamp(1.8rem, 6vw, 3.5rem); margin-top: 1rem;">What We<br>Stand For.</h2>
             </div>
             
             <div class="values-grid" data-aos="fade-up" data-aos-delay="200">
@@ -201,7 +201,7 @@ require_once 'includes/functions.php';
             <div class="grid grid-2" style="gap: 3rem;">
                 <div class="ecosystem-panel" data-aos="fade-right">
                     <span style="display: inline-block; padding: 6px 12px; background: var(--gt-focus-ring); color: var(--gt-accent); font-weight: 700; font-size: 0.8rem; border-radius: 20px; align-self: flex-start; margin-bottom: 2rem;">01 — SOFTWARE HOUSE</span>
-                    <h3 style="font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 1.5rem;">Technology for Businesses</h3>
+                    <h3 style="font-size: clamp(1.5rem, 5vw, 2.5rem); margin-bottom: 1.5rem;">Technology for Businesses</h3>
                     <p class="editorial-text" style="margin-bottom: 3rem;">Global Tech provides modern digital solutions for businesses and organizations.</p>
                     <ul style="list-style: none; padding: 0; margin-bottom: 4rem; display: flex; flex-direction: column; gap: 12px; color: var(--gt-text);">
                         <li>&rarr; Web Development</li>
@@ -218,7 +218,7 @@ require_once 'includes/functions.php';
                 
                 <div class="ecosystem-panel" data-aos="fade-left">
                     <span style="display: inline-block; padding: 6px 12px; background: var(--gt-focus-ring); color: var(--gt-accent); font-weight: 700; font-size: 0.8rem; border-radius: 20px; align-self: flex-start; margin-bottom: 2rem;">02 — TECHNOLOGY INSTITUTE</span>
-                    <h3 style="font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 1.5rem;">Skills for the Future</h3>
+                    <h3 style="font-size: clamp(1.5rem, 5vw, 2.5rem); margin-bottom: 1.5rem;">Skills for the Future</h3>
                     <p class="editorial-text" style="margin-bottom: 3rem;">Global Tech Institute provides practical technology education focused on real skills and real projects.</p>
                     <ul style="list-style: none; padding: 0; margin-bottom: 4rem; display: flex; flex-direction: column; gap: 12px; color: var(--gt-text);">
                         <li>&rarr; Web Development</li>
@@ -241,7 +241,7 @@ require_once 'includes/functions.php';
         <div class="container">
             <div style="margin-bottom: 5rem;" data-aos="fade-up">
                 <span class="section-label">08 / OUR DIFFERENCE</span>
-                <h2 style="font-size: clamp(2.2rem, 6vw, 3.5rem); margin-top: 1rem;">Built Different.<br>Built With Purpose.</h2>
+                <h2 style="font-size: clamp(1.8rem, 6vw, 3.5rem); margin-top: 1rem;">Built Different.<br>Built With Purpose.</h2>
             </div>
             
             <div class="grid grid-3" style="gap: 4rem;">
@@ -285,7 +285,7 @@ require_once 'includes/functions.php';
             <div class="grid grid-2" style="gap: 5rem; align-items: center; margin-bottom: 4rem;">
                 <div data-aos="fade-right">
                     <span class="section-label">09 / OUR APPROACH</span>
-                    <h2 style="font-size: clamp(2.2rem, 6vw, 3.5rem); margin-top: 1rem;">How We<br>Think.</h2>
+                    <h2 style="font-size: clamp(1.8rem, 6vw, 3.5rem); margin-top: 1rem;">How We<br>Think.</h2>
                 </div>
                 <div data-aos="fade-left">
                     <p class="editorial-text">The same practical approach applies to everything we do: Software projects, student learning, training, and product development.</p>
@@ -320,7 +320,7 @@ require_once 'includes/functions.php';
         <div class="container">
             <div style="margin-bottom: 5rem;" data-aos="fade-up">
                 <span class="section-label">10 / OUR PEOPLE</span>
-                <h2 style="font-size: clamp(2.2rem, 6vw, 3.5rem); margin-top: 1rem;">People Build<br>Technology.</h2>
+                <h2 style="font-size: clamp(1.8rem, 6vw, 3.5rem); margin-top: 1rem;">People Build<br>Technology.</h2>
             </div>
             
             <div class="team-grid">
@@ -363,7 +363,7 @@ require_once 'includes/functions.php';
             <div class="grid grid-2" style="gap: 5rem; align-items: center;">
                 <div data-aos="fade-right">
                     <span class="section-label">11 / LEADERSHIP</span>
-                    <h2 style="font-size: clamp(2.2rem, 6vw, 3.5rem); margin-top: 1rem; margin-bottom: 2rem;">Guided By<br>Experience.</h2>
+                    <h2 style="font-size: clamp(1.8rem, 6vw, 3.5rem); margin-top: 1rem; margin-bottom: 2rem;">Guided By<br>Experience.</h2>
                     <p class="editorial-text" style="margin-bottom: 2rem;">[Leadership Profile Placeholder]<br>Professional background and vision statement explaining the direction of Global Tech & Institute.</p>
                     <p class="editorial-text" style="font-style: italic; color: var(--gt-text);">"Our commitment is to build a sustainable digital ecosystem where education meets real-world application."</p>
                 </div>
@@ -409,7 +409,7 @@ require_once 'includes/functions.php';
             <div class="grid grid-2" style="gap: 6rem; align-items: start;">
                 <div data-aos="fade-right">
                     <span class="section-label">13 / OUR IMPACT</span>
-                    <h2 style="font-size: clamp(2.2rem, 6vw, 3.5rem); margin-top: 1rem; margin-bottom: 2rem;">Measuring What<br>Matters.</h2>
+                    <h2 style="font-size: clamp(1.8rem, 6vw, 3.5rem); margin-top: 1rem; margin-bottom: 2rem;">Measuring What<br>Matters.</h2>
                     <p class="editorial-text">We measure our success not just by the software we deploy, but by the capability we build in the people and businesses we work with.</p>
                 </div>
                 <div data-aos="fade-left">
@@ -436,7 +436,7 @@ require_once 'includes/functions.php';
             <div class="grid grid-2" style="gap: 4rem;">
                 <div style="background: var(--gt-bg); border: 1px solid var(--gt-border); padding: var(--space-lg); border-radius: 24px;" data-aos="fade-up" data-aos-delay="0">
                     <span class="section-label">14 / STUDENT SUCCESS</span>
-                    <h3 style="font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 2rem; line-height: 1.1;">Learning Should<br>Lead Somewhere.</h3>
+                    <h3 style="font-size: clamp(1.5rem, 5vw, 2.5rem); margin-bottom: 2rem; line-height: 1.1;">Learning Should<br>Lead Somewhere.</h3>
                     <ul style="list-style: none; padding: 0; margin-bottom: 3rem; display: flex; flex-direction: column; gap: 12px; color: var(--gt-muted);">
                         <li>&rarr; Practical projects</li>
                         <li>&rarr; Skill development</li>
@@ -450,7 +450,7 @@ require_once 'includes/functions.php';
                 
                 <div style="background: var(--gt-bg); border: 1px solid var(--gt-border); padding: var(--space-lg); border-radius: 24px;" data-aos="fade-up" data-aos-delay="100">
                     <span class="section-label">15 / SOFTWARE CAPABILITIES</span>
-                    <h3 style="font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 2rem; line-height: 1.1;">We Don't Just Teach<br>Technology. We Build It.</h3>
+                    <h3 style="font-size: clamp(1.5rem, 5vw, 2.5rem); margin-bottom: 2rem; line-height: 1.1;">We Don't Just Teach<br>Technology. We Build It.</h3>
                     <ul style="list-style: none; padding: 0; margin-bottom: 3rem; display: flex; flex-direction: column; gap: 12px; color: var(--gt-muted);">
                         <li>&rarr; Web Applications</li>
                         <li>&rarr; E-Commerce</li>
@@ -473,7 +473,7 @@ require_once 'includes/functions.php';
         <div class="container">
             <div style="text-align: center; margin-bottom: 5rem;" data-aos="fade-up">
                 <span class="section-label">16 / TECHNOLOGY</span>
-                <h2 style="font-size: clamp(2.2rem, 6vw, 3.5rem); margin-top: 1rem;">Our Core Stacks.</h2>
+                <h2 style="font-size: clamp(1.8rem, 6vw, 3.5rem); margin-top: 1rem;">Our Core Stacks.</h2>
                 <p class="editorial-text" style="max-width: 600px; margin: 1.5rem auto 0;">We specialize in two primary technology ecosystems, ensuring robust, scalable, and modern digital solutions.</p>
             </div>
             
@@ -482,7 +482,7 @@ require_once 'includes/functions.php';
                 <div style="background: var(--gt-card-bg); border: 1px solid var(--gt-border); border-radius: 24px; padding: var(--space-lg); position: relative; overflow: hidden;" data-aos="fade-right">
                     <div style="position: absolute; top: -50px; right: -50px; max-width: 100vw; max-height: 100vh; width: 200px; height: 200px; background: var(--gt-accent); filter: blur(100px); opacity: 0.1;"></div>
                     <span style="font-family: var(--font-display); font-size: 0.8rem; font-weight: 700; color: var(--gt-accent); letter-spacing: 2px;">ECOSYSTEM 01</span>
-                    <h3 style="font-size: clamp(1.8rem, 4vw, 2.5rem); margin: 1rem 0 2rem; color: var(--gt-text);">Full-Stack<br>PHP / Laravel</h3>
+                    <h3 style="font-size: clamp(1.5rem, 5vw, 2.5rem); margin: 1rem 0 2rem; color: var(--gt-text);">Full-Stack<br>PHP / Laravel</h3>
                     <p style="color: var(--gt-muted); margin-bottom: 2.5rem; line-height: 1.6;">Our robust backend ecosystem powering scalable business applications, complex APIs, and enterprise systems.</p>
                     <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
                         <span style="padding: 10px 20px; background: var(--gt-card-hover); border-radius: 8px; color: var(--gt-text); font-size: 0.9rem; border: 1px solid var(--gt-border);">PHP 8+</span>
@@ -496,7 +496,7 @@ require_once 'includes/functions.php';
                 <div style="background: var(--gt-card-bg); border: 1px solid var(--gt-border); border-radius: 24px; padding: var(--space-lg); position: relative; overflow: hidden;" data-aos="fade-left">
                     <div style="position: absolute; top: -50px; right: -50px; max-width: 100vw; max-height: 100vh; width: 200px; height: 200px; background: #61DAFB; filter: blur(100px); opacity: 0.05;"></div>
                     <span style="font-family: var(--font-display); font-size: 0.8rem; font-weight: 700; color: var(--gt-accent); letter-spacing: 2px;">ECOSYSTEM 02</span>
-                    <h3 style="font-size: clamp(1.8rem, 4vw, 2.5rem); margin: 1rem 0 2rem; color: var(--gt-text);">Modern<br>MERN Stack</h3>
+                    <h3 style="font-size: clamp(1.5rem, 5vw, 2.5rem); margin: 1rem 0 2rem; color: var(--gt-text);">Modern<br>MERN Stack</h3>
                     <p style="color: var(--gt-muted); margin-bottom: 2.5rem; line-height: 1.6;">Our high-performance javascript ecosystem for dynamic single-page applications and real-time interfaces.</p>
                     <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
                         <span style="padding: 10px 20px; background: var(--gt-card-hover); border-radius: 8px; color: var(--gt-text); font-size: 0.9rem; border: 1px solid var(--gt-border);">MongoDB</span>
@@ -515,7 +515,7 @@ require_once 'includes/functions.php';
             <div class="grid grid-2" style="gap: 5rem; align-items: center; margin-bottom: 6rem;">
                 <div data-aos="fade-right">
                     <span class="section-label">17 / CULTURE</span>
-                    <h2 style="font-size: clamp(2.2rem, 6vw, 3.5rem); margin-top: 1rem; margin-bottom: 2rem;">Curious Minds.<br>Practical Builders.</h2>
+                    <h2 style="font-size: clamp(1.8rem, 6vw, 3.5rem); margin-top: 1rem; margin-bottom: 2rem;">Curious Minds.<br>Practical Builders.</h2>
                     <p class="editorial-text">Our culture revolves around continuous improvement, solving problems, and taking pride in what we create.</p>
                 </div>
                 <div data-aos="fade-left">
@@ -547,7 +547,7 @@ require_once 'includes/functions.php';
         <div class="container text-center">
             <div data-aos="fade-up" style="max-width: 700px; margin: 0 auto;">
                 <span class="section-label">19 / CAREERS</span>
-                <h2 style="font-size: clamp(2.2rem, 6vw, 3.5rem); margin-top: 1rem; margin-bottom: 2rem;">Build Your Career<br>With Technology.</h2>
+                <h2 style="font-size: clamp(1.8rem, 6vw, 3.5rem); margin-top: 1rem; margin-bottom: 2rem;">Build Your Career<br>With Technology.</h2>
                 <p class="editorial-text" style="margin-bottom: 3rem;">We're building an environment for people who want to learn, create and grow.</p>
                 <a href="contact.php" class="btn btn-outline" style="border-color: var(--gt-border-hover);">Explore Opportunities &rarr;</a>
             </div>
@@ -560,13 +560,13 @@ require_once 'includes/functions.php';
             <div class="grid grid-2" style="gap: 3rem;">
                 <!-- Student CTA -->
                 <div style="background: linear-gradient(145deg, var(--gt-focus-ring), transparent); border: 1px solid var(--gt-focus-ring); padding: var(--space-lg); border-radius: 24px; display: flex; flex-direction: column; justify-content: center;" data-aos="fade-right">
-                    <h3 style="font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 1.5rem; color: var(--gt-text);">Ready to Start Learning?</h3>
+                    <h3 style="font-size: clamp(1.5rem, 5vw, 2.5rem); margin-bottom: 1.5rem; color: var(--gt-text);">Ready to Start Learning?</h3>
                     <p class="editorial-text" style="margin-bottom: 3rem;">Choose a skill. Build real projects. Take the next step.</p>
                     <a href="apply.php" class="btn btn-primary" style="align-self: flex-start;">Apply Now &rarr;</a>
                 </div>
                 <!-- Business CTA -->
                 <div style="background: var(--gt-card-bg); border: 1px solid var(--gt-border); padding: var(--space-lg); border-radius: 24px; display: flex; flex-direction: column; justify-content: center;" data-aos="fade-left">
-                    <h3 style="font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 1.5rem; color: var(--gt-text);">Have a Digital<br>Project in Mind?</h3>
+                    <h3 style="font-size: clamp(1.5rem, 5vw, 2.5rem); margin-bottom: 1.5rem; color: var(--gt-text);">Have a Digital<br>Project in Mind?</h3>
                     <p class="editorial-text" style="margin-bottom: 3rem;">Let's build a practical technology solution for your business.</p>
                     <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
                         <a href="services.html#project-inquiry" class="btn btn-primary" style="background: #fff; color: var(--gt-inverted-text);">Start a Project &rarr;</a>
@@ -582,7 +582,7 @@ require_once 'includes/functions.php';
         <div class="container">
             <div style="text-align: center; margin-bottom: 4rem;" data-aos="fade-up">
                 <span class="section-label">FAQ</span>
-                <h2 style="font-size: clamp(2.2rem, 6vw, 3.5rem); margin-top: 1rem;">Frequently Asked Questions</h2>
+                <h2 style="font-size: clamp(1.8rem, 6vw, 3.5rem); margin-top: 1rem;">Frequently Asked Questions</h2>
             </div>
             
             <div style="max-width: 800px; margin: 0 auto;" data-aos="fade-up">

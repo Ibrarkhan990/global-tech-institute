@@ -83,27 +83,6 @@
   background-color: var(--gt-bg);
 }
 
-.hero-metadata {
-  position: absolute;
-  bottom: 30px;
-  right: 5%;
-  z-index: 2;
-  text-align: right;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
-}
-
-@media (max-width: 768px) {
-  .hero-metadata {
-    position: relative;
-    bottom: auto;
-    right: auto;
-    text-align: left;
-    margin-top: var(--space-md);
-  }
-}
-
 .hero-content {
   max-width: 800px;
   z-index: 2;
@@ -156,7 +135,19 @@
   letter-spacing: 2px;
   text-align: right;
   z-index: 2;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
+
+@media (max-width: 768px) {
+  .hero-metadata {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    text-align: left;
+    margin-top: var(--space-md);
+  }
+}
+
 
 /* Data Strip (Trust Metrics) */
 .data-strip {
@@ -409,3 +400,225 @@
 
 
 
+
+/* --- NEW CLEAN EDUCATION SECTION --- */
+.badge-accent {
+    display: inline-block;
+    padding: 6px 14px;
+    background: var(--gt-accent-soft);
+    color: var(--gt-accent);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.8rem;
+    border-radius: 30px;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+}
+.section-title {
+    font-size: clamp(2.2rem, 8vw, 4.5rem);
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    letter-spacing: -1px;
+    color: var(--gt-text-strong);
+}
+.text-outline {
+    color: transparent;
+    -webkit-text-stroke: 1px var(--gt-text-strong);
+}
+.section-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+    color: var(--gt-muted);
+}
+.course-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.course-card {
+    background: var(--gt-card-bg);
+    border: 1px solid var(--gt-border);
+    border-radius: 16px;
+    padding: 2.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+}
+.course-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--gt-accent);
+    box-shadow: var(--gt-shadow);
+}
+.course-card-accent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--gt-accent);
+}
+.course-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.course-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.tag {
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.tag-bestseller {
+    background: var(--gt-accent-soft);
+    color: var(--gt-accent);
+}
+.tag-category {
+    background: var(--gt-control-bg);
+    color: var(--gt-text);
+}
+.course-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--gt-text-strong);
+    letter-spacing: -0.5px;
+}
+.course-desc {
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--gt-muted);
+}
+.course-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    border-top: 1px solid var(--gt-border);
+    padding-top: 1.5rem;
+}
+.stat-item .stat-label {
+    font-size: 0.75rem;
+    color: var(--gt-muted);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.stat-item .stat-value {
+    font-weight: 700;
+    color: var(--gt-text-strong);
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.stat-item .stat-value svg {
+    color: var(--gt-accent);
+}
+.course-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.course-actions .btn {
+    flex: 1;
+    min-width: 150px;
+}
+.view-all-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2.5rem;
+    background: var(--gt-control-bg);
+    border: 1px dashed var(--gt-border);
+    border-radius: 16px;
+    text-decoration: none;
+    color: var(--gt-text-strong);
+    font-size: 1.25rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+.view-all-card:hover {
+    background: var(--gt-accent-soft);
+    border-color: var(--gt-accent);
+    color: var(--gt-accent);
+}
+.icon-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--gt-surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--gt-border);
+}
+
+@media (max-width: 768px) {
+    .course-card {
+        padding: 1.5rem;
+    }
+    .course-stats {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .course-actions {
+        flex-direction: column;
+    }
+}
+.course-discovery {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.course-sidebar {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.course-sidebar h2.section-title {
+    text-align: center;
+}
+.course-sidebar h2.section-title br {
+    display: none;
+}
+.course-sidebar p.section-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.course-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 2rem;
+}
+
+.course-filters .filter-btn {
+    width: auto;
+    padding: 12px 24px;
+    border-radius: 30px;
+    border: 1px solid var(--gt-border);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+.course-filters .filter-btn:hover, .course-filters .filter-btn.active {
+    padding-left: 24px; /* remove the old hover shift if we want */
+    border-color: var(--gt-accent);
+}

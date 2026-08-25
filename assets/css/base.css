@@ -6,6 +6,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 body {
@@ -14,6 +16,7 @@ body {
   color: var(--gt-text);
   line-height: 1.6;
   overflow-x: hidden;
+  max-width: 100vw;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -119,5 +122,11 @@ html, body, .navbar, .card, .btn, section, footer, input, textarea, select, .the
     }
     .footer-brand {
         grid-column: 1 / -1;
+    }
+}
+@media (max-width: 480px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 }

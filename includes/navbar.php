@@ -8,7 +8,7 @@
     <style>
         body {  }
         #announcement-bar {
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
@@ -22,13 +22,13 @@
             font-weight: 700;
             font-size: 0.85rem;
             letter-spacing: 1px;
-            z-index: 1001;
+            z-index: 1002;
             cursor: pointer;
             transition: all 0.3s ease;
             gap: 12px;
         }
         #announcement-bar:hover {
-            background: #d4f000; /* slightly darker/brighter hover */
+            background: #d4f000;
         }
         .action-text {
             text-decoration: underline;
@@ -51,11 +51,41 @@
         /* Override navbar top positioning only on index.html */
         .navbar {
             top: 40px !important;
+            transition: top 0.3s ease, background-color 0.3s ease !important;
         }
         .navbar.scrolled {
             top: 0 !important;
         }
+        
+        @media (max-width: 768px) {
+            #announcement-bar {
+                font-size: 0.75rem;
+                padding: 8px 10px;
+                height: auto;
+                min-height: 40px;
+                flex-wrap: wrap;
+                line-height: 1.4;
+            }
+        }
     </style>
+    
+    <script>
+        // Adjust navbar top dynamically based on announcement bar height
+        function adjustNavbarTop() {
+            const annBar = document.getElementById('announcement-bar');
+            const navbar = document.querySelector('.navbar');
+            if (annBar && navbar) {
+                if (!navbar.classList.contains('scrolled')) {
+                    navbar.style.setProperty('top', annBar.offsetHeight + 'px', 'important');
+                } else {
+                    navbar.style.setProperty('top', '0', 'important');
+                }
+            }
+        }
+        window.addEventListener('load', adjustNavbarTop);
+        window.addEventListener('resize', adjustNavbarTop);
+        window.addEventListener('scroll', adjustNavbarTop);
+    </script>
 
         <!-- Navbar -->
     <nav class="navbar">
@@ -95,4 +125,21 @@
     #themeToggle:hover { transform: scale(1.05); border-color: var(--gt-accent); color: var(--gt-accent); }
     #themeToggle:focus-visible { outline: 2px solid var(--gt-focus-ring); outline-offset: 2px; }
 </style>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+        
+        if (mobileMenuBtn && navLinks) {
+            mobileMenuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                if (navLinks.classList.contains('active')) {
+                    mobileMenuBtn.innerHTML = '✕';
+                } else {
+                    mobileMenuBtn.innerHTML = '☰';
+                }
+            });
+        }
+    });
+</script>
     </nav>

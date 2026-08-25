@@ -363,7 +363,7 @@ $contact_settings = $stmt->fetch();
         
         <div class="container" style="position: relative; z-index: 2; text-align: center;" data-aos="zoom-in">
             <span class="section-label" style="opacity: 0.7;">05 / WHY CONTACT US</span>
-            <h2 style="color: var(--gt-text); font-size: clamp(3rem, 5vw, 4.5rem); letter-spacing: -2px; margin-bottom: 4rem; line-height: 1.1; text-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+            <h2 style="color: var(--gt-text); font-size: clamp(2.2rem, 8vw, 4.5rem); letter-spacing: -2px; margin-bottom: 4rem; line-height: 1.1; text-shadow: 0 10px 30px rgba(0,0,0,0.5);">
                 A Conversation Can<br>
                 <span style="color: var(--gt-accent);">Start Something Bigger.</span>
             </h2>

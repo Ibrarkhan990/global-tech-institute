@@ -227,7 +227,7 @@ require_once 'includes/functions.php';
             <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 4rem; flex-wrap: wrap; gap: 2rem;">
                 <div>
                     <span class="section-label">08 / TECHNOLOGY</span>
-                    <h2 style="font-size: clamp(2.2rem, 6vw, 3.5rem); line-height: 1.1; margin-top: 1rem;">Technology,<br>Explained Clearly.</h2>
+                    <h2 style="font-size: clamp(1.8rem, 6vw, 3.5rem); line-height: 1.1; margin-top: 1rem;">Technology,<br>Explained Clearly.</h2>
                 </div>
                 <a href="insight-detail.php" class="btn btn-outline">Explore Technology →</a>
             </div>
@@ -245,7 +245,7 @@ require_once 'includes/functions.php';
             <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 4rem; flex-wrap: wrap; gap: 2rem;">
                 <div>
                     <span class="section-label">09 / DEVELOPMENT</span>
-                    <h2 style="font-size: clamp(2.2rem, 6vw, 3.5rem); line-height: 1.1; margin-top: 1rem;">Build Better<br>Software.</h2>
+                    <h2 style="font-size: clamp(1.8rem, 6vw, 3.5rem); line-height: 1.1; margin-top: 1rem;">Build Better<br>Software.</h2>
                 </div>
             </div>
             <div class="insights-grid">
@@ -260,7 +260,7 @@ require_once 'includes/functions.php';
         <div class="container">
             <div style="text-align: center; margin-bottom: 4rem;" data-aos="fade-up">
                 <span class="section-label">10 / E-COMMERCE</span>
-                <h2 style="font-size: clamp(2.2rem, 6vw, 3.5rem); line-height: 1.1; margin: 1rem 0;">Building Better<br>Digital Commerce.</h2>
+                <h2 style="font-size: clamp(1.8rem, 6vw, 3.5rem); line-height: 1.1; margin: 1rem 0;">Building Better<br>Digital Commerce.</h2>
             </div>
             
             <div class="insights-grid" style="align-items: center;">

@@ -54,10 +54,31 @@
   }
   
   .nav-links {
-    display: none; /* Add hamburger logic in JS later */
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--gt-surface);
+    padding: var(--space-md) 5%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    border-bottom: 1px solid var(--gt-border);
   }
   
-  .d-none-mobile {
+  .nav-links.active {
+    display: flex;
+  }
+  
+  .nav-links .nav-link {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--gt-border);
+    width: 100%;
+  }
+  .nav-links .nav-link:last-child {
+    border-bottom: none;
+  }
     display: none !important;
   }
   

@@ -316,7 +316,7 @@ require_once 'includes/functions.php';
                 <div style="position: relative; z-index: 1;">
                     <span style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 20px; background: var(--gt-card-hover); border: 1px solid var(--gt-border); color: var(--gt-text); font-family: var(--font-display); font-weight: 700; font-size: 0.9rem; border-radius: 30px; margin-bottom: 2rem; letter-spacing: 2px;"><span style="color: var(--gt-accent); font-size: 1.2rem; line-height: 1;">●</span> READY TO START?</span>
                     
-                    <h2 style="font-size: clamp(3rem, 6vw, 5.5rem); line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -2px;">Your Future<br><span style="color: transparent; -webkit-text-stroke: 1px var(--gt-accent);">Starts With One Decision.</span></h2>
+                    <h2 style="font-size: clamp(2rem, 8vw, 5.5rem); line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -2px;">Your Future<br><span style="color: transparent; -webkit-text-stroke: 1px var(--gt-accent);">Starts With One Decision.</span></h2>
                     
                     <p class="text-muted" style="font-size: 1.25rem; margin-bottom: 3.5rem; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">Join thousands of students and transform your career. Learn the skills. Build the projects. Create the future.</p>
                     
