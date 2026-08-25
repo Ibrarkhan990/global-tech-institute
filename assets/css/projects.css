@@ -1,0 +1,412 @@
+﻿/* Projects CSS */
+
+/* Filter System */
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.filter-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: auto !important;
+    gap: 10px;
+    background: var(--gt-card-inner-bg);
+    border: 1px solid var(--gt-border);
+    color: var(--gt-muted);
+    padding: 12px 28px !important;
+    border-radius: 50px !important;
+    cursor: pointer;
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    text-align: center !important;
+    transition: var(--transition-theme);
+}
+
+.filter-btn:hover {
+    color: var(--gt-text) !important;
+    background: var(--gt-control-bg) !important;
+    border-color: var(--gt-border-hover) !important;
+    padding: 12px 28px !important;
+}
+
+.filter-btn.active {
+    background: var(--gt-accent) !important;
+    color: var(--gt-inverted-text) !important;
+    border-color: var(--gt-accent) !important;
+    box-shadow: 0 4px 15px var(--gt-focus-ring) !important;
+    padding: 12px 28px !important;
+}
+
+/* Projects Grid - Uniform Premium Cards */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 2.5rem;
+}
+
+.project-card {
+    background: var(--gt-card-bg);
+    border: 1px solid var(--gt-border);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition-theme);
+    backdrop-filter: blur(10px);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--gt-shadow);
+    border-color: var(--gt-border-hover);
+    background: var(--gt-input-bg);
+}
+
+.pc-image {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pc-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+.project-card:hover .pc-image img {
+    transform: scale(1.08);
+}
+
+.status-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    z-index: 2;
+    backdrop-filter: blur(10px);
+}
+
+.status-badge.live {
+    background: var(--gt-focus-ring);
+    color: var(--gt-accent);
+    border: 1px solid var(--gt-focus-ring);
+}
+
+.status-badge.progress-badge {
+    background: var(--gt-control-bg);
+    color: var(--gt-text);
+    border: 1px solid var(--gt-border-hover);
+}
+
+.pc-content {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.pc-meta {
+    font-family: var(--font-display);
+    color: var(--gt-accent);
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.pc-title {
+    font-size: 2rem;
+    color: var(--gt-text);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.pc-desc {
+    color: var(--gt-muted);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    flex: 1;
+    font-size: 1.05rem;
+}
+
+.pc-tech {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.pc-tech span {
+    font-size: 0.75rem;
+    color: var(--gt-text);
+    background: var(--gt-card-hover);
+    padding: 6px 12px;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    border: 1px solid var(--gt-border);
+}
+
+/* Featured Project */
+.featured-project-card {
+    display: flex;
+    background: var(--gt-card-bg);
+    border: 1px solid var(--gt-border);
+    border-radius: 24px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    transition: border-color 0.4s;
+}
+.featured-project-card:hover {
+    border-color: var(--gt-border-hover);
+}
+
+.fp-image {
+    width: 55%;
+    position: relative;
+    overflow: hidden;
+}
+
+.fp-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+.featured-project-card:hover .fp-image img {
+    transform: scale(1.05);
+}
+
+.fp-content {
+    width: 45%;
+    padding: 5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fp-tech {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.fp-tech span {
+    padding: 8px 16px;
+    background: var(--gt-card-hover);
+    border: 1px solid var(--gt-border);
+    color: var(--gt-text);
+    font-size: 0.85rem;
+    border-radius: 50px;
+}
+
+/* Modern List for Software & Web Experiences */
+.modern-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.ml-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: var(--gt-card-bg);
+    border: 1px solid var(--gt-border);
+    border-radius: 16px;
+    transition: var(--transition-theme);
+}
+
+.ml-item:hover {
+    background: var(--gt-card-hover);
+    border-color: var(--gt-border-hover);
+    transform: translateX(10px);
+}
+
+.ml-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: var(--gt-focus-ring);
+    color: var(--gt-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ml-content h4 {
+    color: var(--gt-text);
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
+}
+
+.ml-content p {
+    color: var(--gt-muted);
+    font-size: 1rem;
+}
+
+/* Tech Stack Cards */
+.tech-card {
+    background: var(--gt-card-bg);
+    border: 1px solid var(--gt-border);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: var(--transition-theme);
+}
+
+.tech-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--gt-border-hover);
+    box-shadow: var(--gt-shadow);
+}
+
+.tc-header {
+    background: var(--gt-card-bg);
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--gt-border);
+    text-align: center;
+    color: var(--gt-text);
+    font-family: var(--font-display);
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+}
+
+.tc-body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.tc-body span {
+    color: var(--gt-muted);
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+.tech-card:hover .tc-body span {
+    color: var(--gt-text);
+}
+
+/* Modern Process Grid */
+.modern-process {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.mp-step {
+    padding: 2rem;
+    background: var(--gt-card-bg);
+    border: 1px solid var(--gt-border);
+    border-radius: 16px;
+    transition: var(--transition-theme);
+}
+
+.mp-step:hover {
+    background: var(--gt-accent-soft);
+    border-color: var(--gt-accent);
+}
+
+.mp-num {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    color: var(--gt-accent);
+    margin-bottom: 1rem;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+.mp-step:hover .mp-num {
+    opacity: 1;
+}
+
+.mp-text {
+    font-size: 1.2rem;
+    color: var(--gt-text);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* Principles */
+.principles-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.principle-modern {
+    padding: 1.5rem;
+    border-left: 2px solid var(--gt-border);
+    transition: var(--transition-theme);
+}
+
+.principle-modern:hover {
+    border-left-color: var(--gt-accent);
+    background: linear-gradient(90deg, rgba(255,255,255,0.03), transparent);
+}
+
+.principle-modern h4 {
+    color: var(--gt-text);
+    font-family: var(--font-display);
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+
+.principle-modern:hover h4 {
+    color: var(--gt-accent);
+}
+
+.principle-modern p {
+    color: var(--gt-muted);
+    font-size: 1.15rem;
+}
+
+@media (max-width: 1024px) {
+    .featured-project-card {
+        flex-direction: column;
+    }
+    .fp-image {
+        width: 100%;
+        height: 350px;
+    }
+    .fp-content {
+        width: 100%;
+        padding: 3rem 2rem;
+    }
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    .modern-process {
+        grid-template-columns: 1fr;
+    }
+    .grid-2, .grid-4 {
+        grid-template-columns: 1fr !important;
+    }
+    .filter-container {
+        border-radius: 20px;
+        padding: 15px;
+    }
+}
+
