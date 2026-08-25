@@ -4,9 +4,9 @@
 
 define('DB_HOST',    'db.fr-roub1.bengt.wasmernet.com');
 define('DB_PORT',    20184);
-define('DB_NAME',    'db_902b6764');
-define('DB_USER',    'user_4cbd00f7');
-define('DB_PASS',    'pw_WRBPrPBLchPnR7YRFG6a51LIEkk8mTKB');
+define('DB_NAME',    'db_f3f90f23');
+define('DB_USER',    'user_c136f466');
+define('DB_PASS',    'pw_aTXKnuCR2h8MLQoW7cO3G9yDQDbmc2On');
 define('DB_CHARSET', 'utf8mb4');
 
 class Database {
