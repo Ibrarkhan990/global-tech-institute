@@ -2,10 +2,11 @@
 // config/database.php — Clean PDO Singleton
 // No inline table creation. Connect cleanly, throw readable errors.
 
-define('DB_HOST',    'localhost');
-define('DB_NAME',    'global_tech_institute');
-define('DB_USER',    'root');
-define('DB_PASS',    '');
+define('DB_HOST',    'db.fr-roub1.bengt.wasmernet.com');
+define('DB_PORT',    20184);
+define('DB_NAME',    'db_902b6764');
+define('DB_USER',    'user_4cbd00f7');
+define('DB_PASS',    'pw_WRBPrPBLchPnR7YRFG6a51LIEkk8mTKB');
 define('DB_CHARSET', 'utf8mb4');
 
 class Database {
@@ -16,6 +17,7 @@ class Database {
         $dsn = sprintf(
             'mysql:host=%s;dbname=%s;charset=%s',
             DB_HOST,
+            DB_PORT,
             DB_NAME,
             DB_CHARSET
         );
